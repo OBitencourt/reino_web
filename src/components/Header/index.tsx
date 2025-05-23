@@ -4,7 +4,8 @@ import { SpecialButton, StyledButton, StyledHeader, StyledNav } from "./style"
 const Header = () => {
 
     return (
-        <>
+        <>  
+            
             <StyledHeader>
                 <Image 
                     alt="logo"
