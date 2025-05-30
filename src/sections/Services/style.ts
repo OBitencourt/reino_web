@@ -53,6 +53,4 @@ export const Chip = styled.div`
 export const Info = styled.p`
     color: #CCCCCC;
     font-size: 1.3rem;
-
-
 `
