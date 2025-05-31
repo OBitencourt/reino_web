@@ -1,5 +1,5 @@
 import Container from "@/src/style"
-import { Card, CardsWrapper, Chip, Circle, Info, Title } from "./style"
+import { Card, CardsWrapper, CardWrapper, Chip, ChipWrapper, Circle, CircleWrapper, Info, Title } from "./style"
 import Image from "next/image"
 
 const Services = () => {
@@ -24,56 +24,82 @@ const Services = () => {
                         }}
                     />
                     <CardsWrapper>
-                        <Card>
-                            <Circle>
-                                <Image 
-                                    alt="UX/UI"
-                                    src="/images/wireframe-icon.svg"
-                                    width={50}
-                                    height={50}
-                                />
-                            </Circle>
-                            <Chip>
-                                Design UX/UI
+                        <CardWrapper>
+                            <Card>
+                                <CircleWrapper>
 
-                            </Chip>
-                            <Info>
-                                Layouts modernos e funcionais, pensados para encantar e guiar o usuário. Projetos em Figma e Canva com foco na usabilidade, estética e identidade visual única, para o seu site.
-                            </Info>
-                        </Card>
-                        <Card>
-                            <Circle>
-                                <Image 
-                                    alt="UX/UI"
-                                    src="/images/code-icon.svg"
-                                    width={50}
-                                    height={50}
-                                />
-                            </Circle>
-                            <Chip>
-                                Desenvolvimento Web
-                            </Chip>
-                            <Info>
-                                Sites modernos, rápidos e responsivos, com foco em performance, visual marcante e navegação fluida. Tecnologias como Next.js, Node.js e MongoDB são utilizadas conforme a necessidade de cada projeto.
-                            </Info>
-                        </Card>
-                        <Card>
-                            <Circle>
-                                <Image 
-                                    alt="UX/UI"
-                                    src="/images/megaphone-icon.svg"
-                                    width={50}
-                                    height={50}
-                                />
-                            </Circle>
-                            <Chip>
-                                Social Media Design
+                                    <Circle>
+                                        <Image 
+                                            alt="UX/UI"
+                                            src="/images/wireframe-icon.svg"
+                                            width={50}
+                                            height={50}
+                                        />
+                                    </Circle>
+                                </CircleWrapper>
+                                <ChipWrapper>
 
-                            </Chip>
-                            <Info>
-                                Transforme seu perfil em um verdadeiro trono digital. Criação de artes profissionais e personalizadas para postagens de Instagram, Facebook e outras redes, com foco em identidade visual, engajamento e comunicação clara com seu público.
-                            </Info>
-                        </Card>
+                                    <Chip>
+                                        Design UX/UI
+
+                                    </Chip>
+                                </ChipWrapper>
+                                <Info>
+                                    Layouts modernos e funcionais, pensados para encantar e guiar o usuário. Projetos em Figma e Canva com foco na usabilidade, estética e identidade visual única, para o seu site.
+                                </Info>
+                            </Card>
+                        </CardWrapper>
+                        <CardWrapper>
+
+                            <Card>
+                                <CircleWrapper>
+
+                                    <Circle>
+                                        <Image 
+                                            alt="UX/UI"
+                                            src="/images/code-icon.svg"
+                                            width={50}
+                                            height={50}
+                                        />
+                                    </Circle>
+
+                                </CircleWrapper>
+                                <ChipWrapper>
+
+                                    <Chip>
+                                        Desenvolvimento Web
+                                    </Chip>
+                                </ChipWrapper>
+                                <Info>
+                                    Sites modernos, rápidos e responsivos, com foco em performance, visual marcante e navegação fluida. Tecnologias como Next.js, Node.js e MongoDB são utilizadas conforme a necessidade de cada projeto.
+                                </Info>
+                            </Card>
+                        </CardWrapper>
+                        <CardWrapper>
+                            <Card>
+                                <CircleWrapper>
+
+                                    <Circle>
+                                        <Image 
+                                            alt="UX/UI"
+                                            src="/images/megaphone-icon.svg"
+                                            width={50}
+                                            height={50}
+                                        />
+                                    </Circle>
+                                </CircleWrapper>
+                                <ChipWrapper>
+                                    <Chip>
+                                        Social Media Design
+
+                                    </Chip>
+
+                                </ChipWrapper>
+                                <Info>
+                                    Transforme seu perfil em um verdadeiro trono digital. Criação de artes profissionais e personalizadas para postagens de Instagram, Facebook e outras redes, com foco em identidade visual, engajamento e comunicação clara com seu público.
+                                </Info>
+                            </Card>
+                        </CardWrapper>
                     </CardsWrapper>
                 </Container>
             </section>
