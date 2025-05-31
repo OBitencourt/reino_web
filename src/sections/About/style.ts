@@ -23,15 +23,22 @@ export const Subtitle = styled.h3`
     -webkit-text-fill-color: transparent;
 `
 
+export const CardWrapper = styled.div`
+    background: linear-gradient(to bottom, #676767, #BB8FFA);
+    padding: 2.5px; /* espessura da borda */
+    border-radius: 20px;
+    box-sizing: border-box;
+`
+
+
 export const CardOne = styled.div`
-    width: 28%;
     text-align: start;
     background-color: var(--card);
-    border: 2.5px solid var(--border);
     border-radius: 18px;
     padding: 28px 44px;
     display: flex;
     flex-direction: column;
+    min-height: 810px;
 
 
     h3 {
@@ -53,13 +60,10 @@ export const CardOne = styled.div`
     }
 `
 export const CardTwo = styled.div`
-    margin-bottom: 40px;
     background-color: var(--card);
-    border: 2.5px solid var(--border);
     border-radius: 18px;
     padding: 28px 44px;
     display: flex;
-    width: 95%;
 
     h3 {
         margin-bottom: 28px;
@@ -78,12 +82,9 @@ export const CardTwo = styled.div`
     }
 `
 export const CardThree = styled.div`
-    margin-right: 40px;
     background-color: var(--card);
-    border: 2.5px solid var(--border);
     border-radius: 18px;
     padding: 28px 44px;
-    width: 45%;
 
     h3 {
         margin-bottom: 28px;
@@ -104,9 +105,8 @@ export const CardThree = styled.div`
 export const CardFour = styled.div`
     background-color: var(--card);
     border-radius: 18px;
-    border: 2.5px solid var(--border);
     padding: 28px 44px;
-    width: 45%;
+    min-height: 415px;
 
     h3 {
         margin-bottom: 28px;

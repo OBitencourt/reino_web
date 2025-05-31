@@ -1,5 +1,5 @@
 import Container from "@/src/style"
-import { CardFour, CardOne, CardThree, CardTwo, Subtitle, Title } from "./style"
+import { CardFour, CardOne, CardThree, CardTwo, CardWrapper, Subtitle, Title } from "./style"
 import Image from "next/image"
 
 
@@ -14,125 +14,136 @@ const About = () => {
                         Sobre Nós
                     </Title>
                     <div style={{display: 'flex', justifyContent: 'center',gap: '40px'}}>
-                        <CardOne>
-                            <Subtitle>
-                                Nosso Propósito
-                            </Subtitle>
+                        <CardWrapper style={{width: '28%'}}>
 
-                            <p>
-                                Criamos o Reino Web para <span>transformar</span> comércios locais, marcas pessoais e empresas de todos os tamanhos em referências no digital. 
-                                <br />
-                                Acreditamos que toda marca merece uma presença marcante na internet — seja com um site profissional, uma identidade forte ou conteúdos nas redes sociais que realmente atraiam os usuários.
-                            </p>
+                            <CardOne>
+                                <Subtitle>
+                                    Nosso Propósito
+                                </Subtitle>
 
-                            <Image 
-                                alt="image1-about"
-                                src="/images/image1-about.svg"
-                                width={250}
-                                height={500}
-                                style={{
-                                    height: 'auto',
-                                    margin: '32px auto'
-                                }}
-                            />
-                        </CardOne>
-
-                        <div style={{display: 'flex', flexDirection: 'column', width: '50%'}}>
-                            <CardTwo>
-                                <div>
-                                    <Subtitle>
-                                        O que nos move...
-                                    </Subtitle>
-
-                                    <ul>
-                                        <li>
-                                            <Image 
-                                                src="/images/shine.svg"
-                                                alt="shine"
-                                                width={50}
-                                                height={50}
-                                            />
-                                            <p>Atendimento Próximo.</p>
-                                        </li>
-                                        <li>
-                                            <Image 
-                                                src="/images/shine.svg"
-                                                alt="shine"
-                                                width={50}
-                                                height={50}
-                                            />
-                                            <p>Design Pensado, não genérico.</p>
-                                        </li>
-                                        <li>
-                                            <Image 
-                                                src="/images/shine.svg"
-                                                alt="shine"
-                                                width={50}
-                                                height={50}
-                                            />
-                                            <p>Soluções personalizadas.</p>
-                                        </li>
-                                        <li>
-                                            <Image 
-                                                src="/images/shine.svg"
-                                                alt="shine"
-                                                width={50}
-                                                height={50}
-                                            />
-                                            <p>Foco nos seus resultados e autenticidade</p>
-                                        </li>                                        
-                                    </ul>
-                                    {/*paragrafo*/}
-                                </div>
+                                <p>
+                                    Criamos o Reino Web para <span>transformar</span> comércios locais, marcas pessoais e empresas de todos os tamanhos em referências no digital. 
+                                    <br />
+                                    Acreditamos que toda marca merece uma presença marcante na internet — seja com um site profissional, uma identidade forte ou conteúdos nas redes sociais que realmente atraiam os usuários.
+                                </p>
 
                                 <Image 
-                                    alt="image2-about"
-                                    src="/images/image2-about.svg"
+                                    alt="image1-about"
+                                    src="/images/image1-about.svg"
                                     width={250}
-                                    height={400}
+                                    height={500}
                                     style={{
-                                        height: 'auto'
+                                        height: 'auto',
+                                        margin: '32px auto'
                                     }}
                                 />
+                            </CardOne>
+                        </CardWrapper>
 
-                            </CardTwo>
+                        <div style={{display: 'flex', flexDirection: 'column', width: '50%'}}>
+                            <CardWrapper style={{ marginBottom: '40px'}}>
+
+                                <CardTwo>
+                                    <div>
+                                        <Subtitle>
+                                            O que nos move...
+                                        </Subtitle>
+
+                                        <ul>
+                                            <li>
+                                                <Image 
+                                                    src="/images/shine.svg"
+                                                    alt="shine"
+                                                    width={50}
+                                                    height={50}
+                                                />
+                                                <p>Atendimento Próximo.</p>
+                                            </li>
+                                            <li>
+                                                <Image 
+                                                    src="/images/shine.svg"
+                                                    alt="shine"
+                                                    width={50}
+                                                    height={50}
+                                                />
+                                                <p>Design Pensado, não genérico.</p>
+                                            </li>
+                                            <li>
+                                                <Image 
+                                                    src="/images/shine.svg"
+                                                    alt="shine"
+                                                    width={50}
+                                                    height={50}
+                                                />
+                                                <p>Soluções personalizadas.</p>
+                                            </li>
+                                            <li>
+                                                <Image 
+                                                    src="/images/shine.svg"
+                                                    alt="shine"
+                                                    width={50}
+                                                    height={50}
+                                                />
+                                                <p>Foco nos seus resultados e autenticidade</p>
+                                            </li>                                        
+                                        </ul>
+                                        {/*paragrafo*/}
+                                    </div>
+
+                                    <Image 
+                                        alt="image2-about"
+                                        src="/images/image2-about.svg"
+                                        width={250}
+                                        height={400}
+                                        style={{
+                                            height: 'auto'
+                                        }}
+                                    />
+
+                                </CardTwo>
+                            </CardWrapper>
 
                             <div style={{display: 'flex'}}>
-                                <CardThree>                                
-                                    <Subtitle>
-                                        Resultados Reais
-                                    </Subtitle>
-                                    <div    
-                                        style={{
-                                            display: 'flex',
-                                            flexDirection: 'column'
-                                        }}
-                                    >
-                                        
-                                        <p>Mais do que aparência</p>
+                                <CardWrapper style={{width: '50%', marginRight: '40px'}}>
 
-                                        <Image 
-                                            alt="image3-about"
-                                            src="/images/image3-about.svg"
-                                            width={200}
-                                            height={250}
+                                    <CardThree>                                
+                                        <Subtitle>
+                                            Resultados Reais
+                                        </Subtitle>
+                                        <div    
                                             style={{
-                                                height: 'auto',
-                                                margin: '0 auto'
+                                                display: 'flex',
+                                                flexDirection: 'column'
                                             }}
+                                        >
+                                            
+                                            <p>Mais do que aparência</p>
 
-                                        />
+                                            <Image 
+                                                alt="image3-about"
+                                                src="/images/image3-about.svg"
+                                                width={200}
+                                                height={250}
+                                                style={{
+                                                    height: 'auto',
+                                                    margin: '0 auto'
+                                                }}
 
-                                        <p>Entregamos <span> IMPACTO</span></p>
-                                    </div>
-                                </CardThree>
+                                            />
 
-                                <CardFour>
-                                    <Subtitle>Missão</Subtitle>
-                                    <p>
-                                        “Na era digital, cada marca merece seu território. O Reino Web te guia na conquista do <span>seu</span>.”
-                                    </p>
-                                </CardFour>
+                                            <p>Entregamos <span> IMPACTO</span></p>
+                                        </div>
+                                    </CardThree>
+                                </CardWrapper>
+                                <CardWrapper style={{width: '50%'}}>
+
+                                    <CardFour>
+                                        <Subtitle>Missão</Subtitle>
+                                        <p>
+                                            “Na era digital, cada marca merece seu território. O Reino Web te guia na conquista do <span>seu</span>.”
+                                        </p>
+                                    </CardFour>
+                                </CardWrapper>
                             </div>
                         </div>
                     </div>
