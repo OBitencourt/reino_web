@@ -8,6 +8,10 @@ export const Title = styled.h2`
     padding-top: 200px;
     z-index: 1;
     margin-bottom: 64px;
+    background-clip: text;
+    background: linear-gradient(to bottom, #ffffff 70%, #BB8FFA  );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 `
 
 export const CardsWrapper = styled.div`

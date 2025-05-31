@@ -20,7 +20,7 @@ const About = () => {
                             </Subtitle>
 
                             <p>
-                                Criamos o Reino Web para transformar comércios locais, marcas pessoais e empresas de todos os tamanhos em referências no digital. 
+                                Criamos o Reino Web para <span>transformar</span> comércios locais, marcas pessoais e empresas de todos os tamanhos em referências no digital. 
                                 <br />
                                 Acreditamos que toda marca merece uma presença marcante na internet — seja com um site profissional, uma identidade forte ou conteúdos nas redes sociais que realmente atraiam os usuários.
                             </p>

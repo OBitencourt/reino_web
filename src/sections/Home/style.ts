@@ -8,6 +8,7 @@ export const Title = styled.h1`
     font-family: var(--font-almarai);
     line-height: 90%;
     background: linear-gradient(to right, #ffffff, #BB8FFA 90% );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -19,14 +20,14 @@ export const Title = styled.h1`
 
 export const Subtitle = styled.h2`
     font-family: var(--font-manrope);
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 500;
     color: var(--cs);
     margin-top: 42px;
 `
 
 export const Divider = styled.div`
-    width: 100%;
+    width: 70%;
     height: 1.5px;
     background: linear-gradient(to right, #090909, #832EFF 50% , #090909 );
     margin-top: 42px;

@@ -8,11 +8,19 @@ export const Title = styled.h2`
     padding-top: 200px;
     z-index: 1;
     margin-bottom: 64px;
+    background-clip: text;
+    background: linear-gradient(to bottom, #ffffff 80%, #BB8FFA  );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 `
 
 export const Subtitle = styled.h3`
     font-size: 1.6rem;
     font-weight: 500;
+    background-clip: text;
+    background: linear-gradient(to bottom, #ffffff 20%, #BB8FFA  );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 `
 
 export const CardOne = styled.div`
@@ -37,6 +45,11 @@ export const CardOne = styled.div`
         font-size: 1.2rem;
         line-height: 2rem;
         margin-bottom: 42px;
+    }
+
+    span {
+        font-weight: bold;
+        color: var(--cs);
     }
 `
 export const CardTwo = styled.div`
@@ -107,10 +120,16 @@ export const CardFour = styled.div`
         font-family: var(--font-dm-sans);
         font-weight: 200;
         font-style: italic;
+        background-clip: text;
+        background: linear-gradient(to bottom, #f1f1f1 20%, #999999  );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     span {
+        -webkit-text-fill-color: #BB8FFA !important;
+        background: none !important;
+        -webkit-background-clip: border-box !important;
         font-weight: bold;
-        color: var(--cs);
     }
 `
