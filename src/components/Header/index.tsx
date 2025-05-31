@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { SpecialButton, StyledButton, StyledHeader, StyledNav } from "./style"
+import { GradientButtonWrapper, IconButton, SpecialButton, StyledButton, StyledHeader, StyledNav } from "./style"
 
 const Header = () => {
 
@@ -34,15 +34,19 @@ const Header = () => {
                 </StyledNav>
 
                 <div style={{display: "flex", gap: "16px"}}>
-                    <SpecialButton>
-                        Contate já!
-                    </SpecialButton>
-                    <Image 
-                        alt="instagram"
-                        src="/images/instagram-icon.svg"
-                        width={40}
-                        height={40}
-                    />
+                    <GradientButtonWrapper>
+                        <SpecialButton>
+                            Contate já!
+                        </SpecialButton>
+                    </GradientButtonWrapper>
+                    <IconButton>
+                        <Image 
+                            alt="instagram"
+                            src="/images/instagram-icon.svg"
+                            width={40}
+                            height={40}
+                        />
+                    </IconButton>
                 </div>
             </StyledHeader>
         </>

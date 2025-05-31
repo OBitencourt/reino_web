@@ -131,5 +131,6 @@ export const CardFour = styled.div`
         background: none !important;
         -webkit-background-clip: border-box !important;
         font-weight: bold;
+        background-clip: text;
     }
 `
