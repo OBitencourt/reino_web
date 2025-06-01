@@ -25,9 +25,10 @@ export const Subtitle = styled.h3`
 
 export const CardWrapper = styled.div`
     background: linear-gradient(to bottom, #676767, #BB8FFA);
-    padding: 2.5px; /* espessura da borda */
+    padding: 1.5px; /* espessura da borda */
     border-radius: 20px;
     box-sizing: border-box;
+    background-origin: border-box;
 `
 
 
