@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { GradientButtonWrapper, IconButton, SpecialButton, StyledButton, StyledHeader, StyledNav } from "./style"
+import { GradientButtonWrapper, IconButton, MenuButton, SpecialButton, StyledButton, StyledHeader, StyledNav } from "./style"
 
 const Header = () => {
 
@@ -48,6 +48,14 @@ const Header = () => {
                         />
                     </IconButton>
                 </div>
+                <MenuButton>
+                    <Image 
+                        src="/images/menu-icon.svg"
+                        alt="menu-icon"
+                        width={40}
+                        height={40}
+                    />
+                </MenuButton>
             </StyledHeader>
         </>
     )

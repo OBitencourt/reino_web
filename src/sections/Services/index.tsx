@@ -45,7 +45,7 @@ const Services = () => {
                                     </Chip>
                                 </ChipWrapper>
                                 <Info>
-                                    Layouts modernos e funcionais, pensados para encantar e guiar o usuário. Projetos em Figma e Canva com foco na usabilidade, estética e identidade visual única, para o seu site.
+                                    Desenhamos e montamos seu la modernos e funcionais, pensados para surpreender e guiar o seu usuário final. Projetos em Figma e Canva com foco na usabilidade, estética e identidade visual única, para o seu site.
                                 </Info>
                             </Card>
                         </CardWrapper>
