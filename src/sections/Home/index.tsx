@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Container from "../../style"
-import { Divider, PrimaryButton, SecondaryButton, Subtitle, Title } from "./style"
+import { ButtonsWrapper, Divider, ImageWrapper, PrimaryButton, SecondaryButton, Subtitle, Title, Wrapper } from "./style"
 
 const Home = () => {
     return (
@@ -16,7 +16,7 @@ const Home = () => {
                 <Container>
                     <div style={{display: "flex", justifyContent: "space-between",}}>
 
-                        <div style={{width: "50%"}}>
+                        <Wrapper>
 
                             <Title>
                                 Bem vindo ao 
@@ -29,7 +29,7 @@ const Home = () => {
                                 Construa seu império digital com a gente.
                             </Subtitle>
                             <Divider />
-                            <div style={{display: 'flex', gap: '56px'}}>
+                            <ButtonsWrapper>
                                 <PrimaryButton>
                                     Contacte-nos
                                     <Image 
@@ -48,10 +48,10 @@ const Home = () => {
                                         height={50}
                                     />
                                 </SecondaryButton>
-                            </div>
+                            </ButtonsWrapper>
 
-                        </div>
-                        <div style={{width: "50%", position: "relative", display: 'flex', justifyContent: 'center'}}>
+                        </Wrapper>
+                        <ImageWrapper>
                             <Image 
                                 src="/images/light-hero.svg"
                                 alt="light"
@@ -76,7 +76,7 @@ const Home = () => {
                                     top: "-100px"
                                 }}
                             />
-                        </div>
+                        </ImageWrapper>
                     </div>
                 </Container>
             </section>
