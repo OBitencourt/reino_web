@@ -9,9 +9,16 @@ export const StyledHeader = styled.header`
   padding: 50px 300px;
 
   @media (max-width: 1500px) {
-    padding: 0;
+    padding: 16px;
     width: 90%;
+    margin-bottom: 116px;
+
+    img {
+      width: 50px;
+      height: auto;
+    }
   }
+
 `
 
 export const StyledNav = styled.nav`
@@ -105,7 +112,11 @@ export const MenuButton = styled.button`
 
   @media (max-width: 1500px) {
     display: block;
-    padding: 12px;
+    padding: 8px;
 
+    img {
+      width: 40px;
+      height: auto;
+    }
   }
 `

@@ -10,8 +10,9 @@ const Header = () => {
                 <Image 
                     alt="logo"
                     src="/images/reinoweb-logo.svg"
-                    width={80}
+                    width={70}
                     height={70}
+
                     style={{
                         height: 'auto'
                     }}
