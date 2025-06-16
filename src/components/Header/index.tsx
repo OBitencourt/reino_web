@@ -9,8 +9,8 @@ const Header = () => {
             <StyledHeader>
                 <Image 
                     alt="logo"
-                    src="/images/logo-reinoweb.png"
-                    width={150}
+                    src="/images/reinoweb-logo.svg"
+                    width={80}
                     height={70}
                     style={{
                         height: 'auto'

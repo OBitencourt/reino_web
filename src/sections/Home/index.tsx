@@ -13,7 +13,7 @@ const Home = () => {
 
                 }}
             >
-                <Container>
+                <Container style={{maxWidth: "1800px"}}>
                     <div style={{display: "flex", justifyContent: "space-between",}}>
 
                         <Wrapper>

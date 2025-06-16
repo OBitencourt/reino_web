@@ -6,7 +6,7 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   color: white;
-  padding: 0px 300px;
+  padding: 50px 300px;
 
   @media (max-width: 1500px) {
     padding: 0;
@@ -75,7 +75,7 @@ export const SpecialButton = styled.button`
 `;
 
 export const IconButton = styled.button`
-  padding: 8px;
+  padding: 8px 10px;
   background-color: transparent;
   border: none;
   transition: all 200ms ease-in-out;
