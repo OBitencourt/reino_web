@@ -33,19 +33,19 @@ const Home = () => {
                                 <PrimaryButton>
                                     Contacte-nos
                                     <Image 
-                                        src="/images/arrow-right.svg"
+                                        src="/images/arrow-pink.svg"
                                         alt="arrow"
-                                        width={50}
-                                        height={50}
+                                        width={30}
+                                        height={30}
                                     />
                                 </PrimaryButton>
                                 <SecondaryButton>
                                     Nossos Serviços
                                     <Image 
-                                        src="/images/arrow-bottom.svg"
+                                        src="/images/arrow-gray.svg"
                                         alt="arrow"
-                                        width={50}
-                                        height={50}
+                                        width={30}
+                                        height={30}
                                     />
                                 </SecondaryButton>
                             </ButtonsWrapper>

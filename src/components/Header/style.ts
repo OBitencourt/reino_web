@@ -19,6 +19,16 @@ export const StyledHeader = styled.header`
     }
   }
 
+  @media (max-width: 430px) {
+    width: 90%;
+    margin-top: 16px;
+    margin-bottom: 0;
+
+    img {
+      width: 50px;
+      height: auto;
+    }
+  }
 `
 
 export const StyledNav = styled.nav`

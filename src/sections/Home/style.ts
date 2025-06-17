@@ -42,6 +42,25 @@ export const Title = styled.h1`
             font-weight: 900;
         }
     }
+
+    @media (max-width: 430px) {
+        
+        font-size: 3rem;
+        text-align: center;
+        line-height: 120%;
+        margin-top: 12px;
+        width: 90%;
+        background: linear-gradient(to bottom, #ffffff, #BB8FFA 90% );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+
+        span {
+            font-size: 6rem;
+            font-weight: 900;
+        }
+    }
 `
 
 export const Subtitle = styled.h2`
@@ -50,6 +69,12 @@ export const Subtitle = styled.h2`
     font-weight: 500;
     color: var(--cs);
     margin-top: 42px;
+
+    @media (max-width: 430px) {
+        font-size: 1.5rem;
+        width: 90%;
+        margin-top: 12px;
+    }
 `
 
 export const Divider = styled.div`
@@ -58,6 +83,11 @@ export const Divider = styled.div`
     background: linear-gradient(to right, #090909, #832EFF 50% , #090909 );
     margin-top: 42px;
     margin-bottom: 42px;
+
+    @media (max-width: 430px) {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
 `
 
 export const ButtonsWrapper = styled.div`
@@ -74,7 +104,7 @@ export const ButtonsWrapper = styled.div`
 
 
 export const PrimaryButton = styled.button`
-    padding: 20px 50px;
+    padding: 28px 64px;
     border-radius: 32px;
     border: 2.5px solid var(--cs);
     color: var(--cs);
@@ -84,9 +114,9 @@ export const PrimaryButton = styled.button`
     justify-content: center;
     align-items: center;
     gap: 12px;
-    background-color: var(--cp);
+    background-color: transparent;
     box-shadow: inset 0px 0px 20px var(--cs);
-    transition: all 200ms ease-in-out;
+    transition: all 100ms ease-in;
     cursor: pointer;
 
     &:hover {
@@ -94,10 +124,15 @@ export const PrimaryButton = styled.button`
 
     }
 
+    &:active {
+        transform: scale(0.97);
+    }
+
     @media (max-width: 430px) {
         padding: 20px 50px;
         width: 100%;
         font-size: 1.3rem;
+        border-radius: 3rem / 3rem;
     }
 `
 
@@ -114,8 +149,12 @@ export const SecondaryButton = styled.button`
     cursor: pointer;
     
     &:hover {
-        transform: scale(1.05);
+        filter: brightness(1.1);
 
+    }
+    
+    &:active {
+        transform: scale(0.97);
     }
     
     @media (max-width: 430px) {
