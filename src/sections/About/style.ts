@@ -45,7 +45,7 @@ export const CardWrapper = styled.div`
 export const BigDiv = styled.div`
     display: flex;
     justify-content: center;
-    gap: 40%;
+    gap: 40px;
 
     @media (max-width: 430px) {
         display: flex;
@@ -59,6 +59,7 @@ export const LittleDiv = styled.div`
     display: flex;
     flex-direction: column;
     width: 50%;
+    gap: 40px;
 
     @media (max-width: 430px) {
         width: 100%;
@@ -83,7 +84,7 @@ export const CardOne = styled.div`
     padding: 28px 44px;
     display: flex;
     flex-direction: column;
-    min-height: 810px;
+    min-height: 800px;
 
 
     h3 {
