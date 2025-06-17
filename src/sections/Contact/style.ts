@@ -1,6 +1,17 @@
 
 import styled from "styled-components";
 
+export const ImageWrapper = styled.div`
+
+    @media (max-width: 430px) {
+        img {
+            position: absolute;
+            transform: translateY(160%);
+        }
+        
+    }
+`
+
 export const ContactDiv = styled.div`
     background-color:rgba(15, 15, 15, 0.45);
     border: 1.5px solid var(--border);
@@ -10,6 +21,12 @@ export const ContactDiv = styled.div`
     backdrop-filter: blur( 32px );
     -webkit-backdrop-filter: blur( 32px );
     margin-bottom: 32px;
+
+    @media (max-width: 430px) {
+        width: 90%;
+        padding: 38px 32px;
+        margin-bottom: 28px;
+    }
 `
 
 export const Title = styled.h2`
@@ -23,6 +40,11 @@ export const Title = styled.h2`
     background: linear-gradient(to bottom, #ffffff 30%, #BB8FFA  );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 430px) {
+        margin-bottom: 32px;
+        font-size: 32px;
+    }
 `
 
 export const StyledInput = styled.input`
@@ -85,6 +107,20 @@ export const StyledButton = styled.button`
     }
 `
 
+export const ChipsWrappers = styled.div`
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+    @media (max-width: 430px) {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+`
+
 export const Chip = styled.div`
     width: 50%;
     display: flex;
@@ -99,5 +135,9 @@ export const Chip = styled.div`
     p {
         color: var(--text-color);
         font-size: 1.2rem;
+    }
+
+    @media (max-width: 430px) {
+        width: 100%;
     }
 `

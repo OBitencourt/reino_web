@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Chip, ContactDiv, StyledButton, StyledInput, StyledTextArea, Title } from "./style"
+import { Chip, ChipsWrappers, ContactDiv, ImageWrapper, StyledButton, StyledInput, StyledTextArea, Title } from "./style"
 import Container from "@/src/style"
 
 const Contact = () => {
@@ -8,19 +8,21 @@ const Contact = () => {
 
         <>
             <section id="contact" style={{height: "100dvh",  position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                <Image 
-                    src='/images/light-about.svg'
-                    alt="light-about"
-                    width={3000}
-                    height={2000}
-                    style={{
-                        height: 'auto',
-                        margin: '0 auto',
-                        position: 'absolute',
-                        top: '-800px',
-                        zIndex: '-1'
-                    }}
-                />
+                <ImageWrapper>
+                    <Image 
+                        src='/images/light-about.svg'
+                        alt="light-about"
+                        width={3000}
+                        height={2000}
+                        style={{
+                            height: 'auto',
+                            margin: '0 auto',
+                            position: 'absolute',
+                            top: '-800px',
+                            zIndex: '-1'
+                        }}
+                    />
+                </ImageWrapper>
                 <Container style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', height: '100dvh', transform: 'translateY(50%)'}}>
 
 
@@ -37,7 +39,7 @@ const Contact = () => {
                             </StyledButton>
                         </div>
                     </ContactDiv>
-                    <div style={{width: '45%', display: 'flex', justifyContent: 'space-between', gap: '24px'}}>
+                    <ChipsWrappers>
 
                         <Chip>
                             <Image 
@@ -61,7 +63,7 @@ const Contact = () => {
                                 reinowebofficial@gmail.com
                             </p>
                         </Chip>
-                    </div>
+                    </ChipsWrappers>
                 </Container>
             </section>
         </>
