@@ -1,29 +1,29 @@
 import Container from "@/src/style"
-import { Card, CardsWrapper, CardWrapper, Chip, ChipWrapper, Circle, CircleWrapper, Info, Title } from "./style"
+import { Card, CardsWrapper, CardWrapper, Chip, ChipWrapper, Circle, CircleWrapper, ImageWrapper, Info, Title } from "./style"
 import Image from "next/image"
 
 const Services = () => {
     return (
         <>
-            <section id="services" style={{height: "100dvh",  position: 'relative'}}>
+            <section id="services" style={{paddingBottom: "42px" ,position: 'relative'}}>
                 <Container>
                     <Title>
                         Nossos Serviços
                     </Title>
-                    <Image 
-                        src="/images/light-services.svg"
-                        alt="light-services"
-                        width={2500}
-                        height={10}
-                        style={{
-                            height: 'auto',
-                            position: 'absolute',
-                            left: '0',
-                            top: '0',
-                            zIndex: -1,
-                            
-                        }}
-                    />
+                    <ImageWrapper>
+                        <Image 
+                            src="/images/light-services.svg"
+                            alt="light-services"
+                            width={2500}
+                            height={10}
+                            style={{
+                                position: 'absolute',
+                                left: '0',
+                                top: '0',
+                                zIndex: -1,
+                            }}
+                        />
+                    </ImageWrapper>
                     <CardsWrapper>
                         <CardWrapper>
                             <Card>
