@@ -1,5 +1,5 @@
 import Container from "@/src/style"
-import { CardFour, CardOne, CardThree, CardTwo, CardWrapper, Subtitle, Title } from "./style"
+import { BigDiv, CardFour, CardOne, CardThree, CardTwo, CardWrapper, LittleDiv, Subtitle, Title, TwoLittleDivs } from "./style"
 import Image from "next/image"
 
 
@@ -8,12 +8,12 @@ const About = () => {
     return (
 
         <>
-            <section id="about" style={{height: "100dvh",  position: 'relative'}}>
+            <section id="about" style={{ position: 'relative'}}>
                 <Container>
                     <Title>
                         Sobre Nós
                     </Title>
-                    <div style={{display: 'flex', justifyContent: 'center',gap: '40px'}}>
+                    <BigDiv>
                         <CardWrapper style={{width: '28%'}}>
 
                             <CardOne>
@@ -40,8 +40,8 @@ const About = () => {
                             </CardOne>
                         </CardWrapper>
 
-                        <div style={{display: 'flex', flexDirection: 'column', width: '50%'}}>
-                            <CardWrapper style={{ marginBottom: '40px'}}>
+                        <LittleDiv>
+                            <CardWrapper >
 
                                 <CardTwo>
                                     <div>
@@ -95,6 +95,7 @@ const About = () => {
                                         src="/images/image2-about.svg"
                                         width={250}
                                         height={400}
+                                        className="estrelinhas"
                                         style={{
                                             height: 'auto'
                                         }}
@@ -103,7 +104,7 @@ const About = () => {
                                 </CardTwo>
                             </CardWrapper>
 
-                            <div style={{display: 'flex'}}>
+                            <TwoLittleDivs>
                                 <CardWrapper style={{width: '50%', marginRight: '40px'}}>
 
                                     <CardThree>                                
@@ -144,9 +145,9 @@ const About = () => {
                                         </p>
                                     </CardFour>
                                 </CardWrapper>
-                            </div>
-                        </div>
-                    </div>
+                            </TwoLittleDivs>
+                        </LittleDiv>
+                    </BigDiv>
                 </Container>
             </section>
         

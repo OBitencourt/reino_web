@@ -12,6 +12,10 @@ export const Title = styled.h2`
     background: linear-gradient(to bottom, #ffffff 80%, #BB8FFA  );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 430px) {
+        font-size: 32px;
+    }
 `
 
 export const Subtitle = styled.h3`
@@ -23,14 +27,54 @@ export const Subtitle = styled.h3`
     -webkit-text-fill-color: transparent;
 `
 
+// WRAPPERS
+
 export const CardWrapper = styled.div`
     background: linear-gradient(to bottom, #676767, #BB8FFA);
     padding: 1.5px; /* espessura da borda */
     border-radius: 20px;
     box-sizing: border-box;
     background-origin: border-box;
+
+    @media (max-width: 430px) {
+        width: 100% !important; 
+        margin-bottom: 40px;
+    }
 `
 
+export const BigDiv = styled.div`
+    display: flex;
+    justify-content: center;
+    gap: 40%;
+
+    @media (max-width: 430px) {
+        display: flex;
+        flex-direction: column;
+        padding: 0 24px;
+
+    }
+`
+
+export const LittleDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    @media (max-width: 430px) {
+        width: 100%;
+    }
+`
+
+export const TwoLittleDivs = styled.div`
+    display: flex;
+
+    @media (max-width: 430px) {
+        display: flex;
+        flex-direction: column;
+    }
+`
+
+//
 
 export const CardOne = styled.div`
     text-align: start;
@@ -59,6 +103,15 @@ export const CardOne = styled.div`
         font-weight: bold;
         color: var(--cs);
     }
+
+    @media (max-width: 430px) {
+        padding: 24px 36px;
+
+        img {
+            width: 200px;
+            height: auto;
+        }
+    }
 `
 export const CardTwo = styled.div`
     background-color: var(--card);
@@ -81,6 +134,21 @@ export const CardTwo = styled.div`
     p {
         font-size: 1.2rem;
     }
+
+    @media (max-width: 430px) {
+        padding: 24px 30px;
+
+        img {
+            width: 30px;
+            height: auto;
+        }
+        li {
+            margin-bottom: 16px;
+        }
+        .estrelinhas {
+            display: none;
+        }
+    }
 `
 export const CardThree = styled.div`
     background-color: var(--card);
@@ -102,6 +170,9 @@ export const CardThree = styled.div`
         font-size: 1.9rem;
     }
 
+    @media (max-width: 430px) {
+        
+    }
 `
 export const CardFour = styled.div`
     background-color: var(--card);
