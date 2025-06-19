@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Chip, ChipsWrappers, ContactDiv, ImageWrapper, StyledButton, StyledInput, StyledTextArea, Title } from "./style"
 import Container from "@/src/style"
+import Toasty from "@/src/components/Toasty"
 
 const Contact = () => {
 
@@ -64,6 +65,7 @@ const Contact = () => {
                             </p>
                         </Chip>
                     </ChipsWrappers>
+                    <Toasty />
                 </Container>
             </section>
         </>
