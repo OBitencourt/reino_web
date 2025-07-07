@@ -65,7 +65,7 @@ const Contact = () => {
             <section id="contact" style={{height: "100dvh",  position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                 <ImageWrapper>
                     <Image 
-                        src='/images/light-about.svg'
+                        src='/images/light-about.webp'
                         alt="light-about"
                         width={3000}
                         height={2000}

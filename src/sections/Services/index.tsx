@@ -12,7 +12,7 @@ const Services = () => {
                     </Title>
                     <ImageWrapper>
                         <Image 
-                            src="/images/light-services.svg"
+                            src="/images/light-services.webp"
                             alt="light-services"
                             width={2500}
                             height={10}
