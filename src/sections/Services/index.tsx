@@ -33,8 +33,8 @@ const Services = () => {
                                         <Image 
                                             alt="UX/UI"
                                             src="/images/wireframe-icon.svg"
-                                            width={50}
-                                            height={50}
+                                            width={35}
+                                            height={35}
                                         />
                                     </Circle>
                                 </CircleWrapper>
@@ -59,8 +59,8 @@ const Services = () => {
                                         <Image 
                                             alt="UX/UI"
                                             src="/images/code-icon.svg"
-                                            width={50}
-                                            height={50}
+                                            width={35}
+                                            height={35}
                                         />
                                     </Circle>
 
@@ -84,8 +84,8 @@ const Services = () => {
                                         <Image 
                                             alt="UX/UI"
                                             src="/images/megaphone-icon.svg"
-                                            width={50}
-                                            height={50}
+                                            width={35}
+                                            height={35}
                                         />
                                     </Circle>
                                 </CircleWrapper>
@@ -97,7 +97,7 @@ const Services = () => {
 
                                 </ChipWrapper>
                                 <Info>
-                                    Transforme seu perfil em um verdadeiro trono digital. Criação de artes profissionais e personalizadas para postagens de Instagram, Facebook e outras redes, com foco em identidade visual, engajamento e comunicação clara com seu público.
+                                    Transforme seu perfil em um verdadeiro trono digital. Criamos artes profissionais e personalizadas para postagens de redes sociais, com foco na sua identidade visual, engajamento e comunicação clara com seu público.
                                 </Info>
                             </Card>
                         </CardWrapper>

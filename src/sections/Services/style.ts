@@ -22,7 +22,8 @@ export const Title = styled.h2`
 
 export const CardsWrapper = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 24px;
 
     @media (max-width: 430px) {
         display: flex;
@@ -32,9 +33,9 @@ export const CardsWrapper = styled.div`
 
 export const CardWrapper = styled.div`
     background: linear-gradient(to bottom, #bbbbbb, #832EFF, #bbbbbb);
-    padding: 2px; /* espessura da borda */
-    border-radius: 20px;
-    width: 30%;
+    padding: 1px; /* espessura da borda */
+    border-radius: 18.5px;
+    width: 26%;
     box-sizing: border-box;
     
     @media (max-width: 430px) {
@@ -84,14 +85,16 @@ export const ImageWrapper = styled.div`
 // ELEMENTS
 export const Card = styled.div`
     width: 100%;
-    height: 700px;
+    height: 600px;
     background-color: var(--card);
     border-radius: 18px;
-    box-shadow: inset 0px 0px 82px var(--cs);
+    box-shadow: 
+        inset 0px 0px 54px -22px var(--cs)
+        ;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 104px;
+    padding: 40px 84px;
 
     @media (max-width: 430px) {
         width: 100%;
@@ -115,7 +118,7 @@ export const Circle = styled.div`
 
 export const Chip = styled.div`
     color: #FFFFFF;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     background-color: var(--background);
     color: #ffffff;
     border-radius: 50px;
@@ -130,7 +133,7 @@ export const Chip = styled.div`
 
 export const Info = styled.p`
     color: #CCCCCC;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     
     @media (max-width: 430px) {
         width: 100%;
