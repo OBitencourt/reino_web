@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     width: 50%;
-
+    display: flex;
+    flex-direction: column;
 
     @media (max-width: 1500px) {
         width: 100%;
@@ -15,6 +16,7 @@ export const Wrapper = styled.div`
 `
 
 export const Title = styled.h1`
+    text-align: center;
     color: var(--text-color);
     margin: 0 auto;
     font-size: 8rem;
@@ -64,6 +66,7 @@ export const Title = styled.h1`
 `
 
 export const Subtitle = styled.h2`
+    text-align: center;
     font-family: var(--font-manrope);
     font-size: 2rem;
     font-weight: 500;
@@ -78,6 +81,8 @@ export const Subtitle = styled.h2`
 `
 
 export const Divider = styled.div`
+    display: flex;
+    align-self: center;
     width: 70%;
     height: 1.5px;
     background: linear-gradient(to right, #090909, #832EFF 50% , #090909 );
@@ -92,6 +97,7 @@ export const Divider = styled.div`
 
 export const ButtonsWrapper = styled.div`
     display: flex;
+    justify-content: center;
     gap: 56px;
 
 
@@ -104,24 +110,22 @@ export const ButtonsWrapper = styled.div`
 
 
 export const PrimaryButton = styled.button`
-    padding: 28px 64px;
-    border-radius: 32px;
-    border: 2.5px solid var(--cs);
-    color: var(--cs);
+    padding: 22px 72px;
+    border-radius: 18px;
+    border: 2px solid #A161FF;
+    color: #ffffff;
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
-    background-color: transparent;
-    box-shadow: inset 0px 0px 20px var(--cs);
-    transition: all 100ms ease-in;
+    background-color: var(--cp);
+    box-shadow: inset 0px 0px 12px 4px #451C99;
+    transition: all 200ms ease-in-out;
     cursor: pointer;
 
     &:hover {
-        box-shadow: inset 0px 0px 36px var(--cs);
-
+        box-shadow: inset 0px 0px 32px 8px #451C99;
     }
 
     &:active {
@@ -137,21 +141,17 @@ export const PrimaryButton = styled.button`
 `
 
 export const SecondaryButton = styled.button`
-    border-radius: 32px;
-    color: #CCCCCC;
+    padding: 22px 68px;
+    border-radius: 18px;
+    color: var(--cp);
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
     transition: all 200ms ease-in-out;
     cursor: pointer;
-    
-    &:hover {
-        filter: brightness(1.1);
-
-    }
+    border: 2px solid var(--cp);
     
     &:active {
         transform: scale(0.97);
@@ -164,14 +164,30 @@ export const SecondaryButton = styled.button`
     }
 `
 
-// MOBILE ESSENTIALLY
+// Bricks
 
-export const ImageWrapper = styled.div`
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    position: relative;
-    @media (max-width: 1500px) {
-        display: none;
-    }
+
+
+export const FirstBricksBlur = styled.div`
+    width: 400px;
+    height: 400px;
+    background-color: var(--cp);
+    border-radius: 100%;
+    filter: blur(200px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
 `
+
+export const SecondBricksBlur = styled.div`
+    width: 400px;
+    height: 400px;
+    background-color: var(--cp);
+    border-radius: 100%;
+    filter: blur(200px);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+`
+
+// MOBILE ESSENTIALLY

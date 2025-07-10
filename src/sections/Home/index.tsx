@@ -1,20 +1,19 @@
 import Image from "next/image"
 import Container from "../../style"
-import { ButtonsWrapper, Divider, ImageWrapper, PrimaryButton, SecondaryButton, Subtitle, Title, Wrapper } from "./style"
+import { ButtonsWrapper, Divider, FirstBricksBlur, PrimaryButton, SecondaryButton, SecondBricksBlur, Subtitle, Title, Wrapper } from "./style"
 
 const Home = () => {
     return (
         <>
             <section 
                 style={{
-                    display: 'flex', 
-                    alignItems: 'center',
+                    paddingTop: '100px',
                     height: "90dvh"
 
                 }}
             >
                 <Container style={{maxWidth: "1800px"}}>
-                    <div style={{display: "flex", justifyContent: "space-between",}}>
+                    <div style={{display: "flex", justifyContent: "center",}}>
 
                         <Wrapper>
 
@@ -31,52 +30,43 @@ const Home = () => {
                             <Divider />
                             <ButtonsWrapper>
                                 <PrimaryButton>
-                                    Contacte-nos
-                                    <Image 
-                                        src="/images/arrow-pink.svg"
-                                        alt="arrow"
-                                        width={30}
-                                        height={30}
-                                    />
+                                    Fale Conosco!
                                 </PrimaryButton>
                                 <SecondaryButton>
                                     Nossos Serviços
-                                    <Image 
-                                        src="/images/arrow-gray.svg"
-                                        alt="arrow"
-                                        width={30}
-                                        height={30}
-                                    />
                                 </SecondaryButton>
                             </ButtonsWrapper>
 
+                            <FirstBricksBlur />
+                            <Image 
+                                src="/images/brick-mask1.svg"
+                                alt="bricks"
+                                width={800}
+                                height={200}
+                                style={{
+                                    height: 'auto',
+                                    position: 'absolute',
+                                    bottom: '-55px',
+                                    left: '-180px',
+                                    filter: 'opacity(40%)'
+                                }}
+                            />
+                            <SecondBricksBlur />
+                            <Image 
+                                src="/images/brick-mask2.svg"
+                                alt="bricks"
+                                width={800}
+                                height={200}
+                                style={{
+                                    height: 'auto',
+                                    position: 'absolute',
+                                    bottom: '-100px',
+                                    right: '-170px',
+                                    filter: 'opacity(30%)'                                    
+                                }}
+                            />
+
                         </Wrapper>
-                        <ImageWrapper>
-                            <Image 
-                                src="/images/light-hero.svg"
-                                alt="light"
-                                width={1700}
-                                height={500}
-                                style={{
-                                    height: "auto",
-                                    zIndex: 0,
-                                    position: "absolute",
-                                    top: "-100px"
-                                }}
-                            />
-                            <Image 
-                                src="/images/image-hero.png"
-                                alt="light"
-                                width={500}
-                                height={500}
-                                style={{
-                                    height: "auto",
-                                    zIndex: 1,
-                                    position: "absolute",
-                                    top: "-100px"
-                                }}
-                            />
-                        </ImageWrapper>
                     </div>
                 </Container>
             </section>
