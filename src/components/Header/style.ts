@@ -34,7 +34,7 @@ export const StyledHeader = styled.header`
 export const StyledNav = styled.nav`
   display: flex;
   justify-content: center;
-  width: 20%;
+  width: 30%;
   gap: 54px;
 
 
@@ -50,7 +50,7 @@ export const StyledButton = styled.button`
   color: var(--dark-text);
   transition: all 200ms ease-in-out;
   font-family: var(--font-dm-sans);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 400;
   cursor: pointer;
 
@@ -75,10 +75,10 @@ export const SpecialButton = styled.button`
   background: #121212; /* Cor interna do botão */
   color: #CCCCCC;
   border: none;
-  padding: 14px 44px;
+  padding: 12px 40px;
   border-radius: 30px;
   font-family: var(--font-dm-sans);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -92,7 +92,7 @@ export const SpecialButton = styled.button`
 `;
 
 export const IconButton = styled.button`
-  padding: 8px 10px;
+  padding: 2px 10px;
   background-color: transparent;
   border: none;
   transition: all 200ms ease-in-out;

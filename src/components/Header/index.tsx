@@ -10,8 +10,8 @@ const Header = () => {
                 <Image 
                     alt="logo"
                     src="/images/reinoweb-logo.svg"
-                    width={70}
-                    height={70}
+                    width={50}
+                    height={50}
 
                     style={{
                         height: 'auto'
@@ -19,19 +19,34 @@ const Header = () => {
                 />
 
                 <StyledNav>
-
-                    <StyledButton>
-                        Home
-                    </StyledButton>
-                    <StyledButton>
-                        Serviços
-                    </StyledButton>
-                    <StyledButton>
-                        Sobre
-                    </StyledButton>
-                    <StyledButton>
-                        Contacte
-                    </StyledButton>
+                    
+                    <ul style={{
+                        listStyle: 'none',
+                        display: 'flex',    
+                        width: '100%',
+                        justifyContent: 'space-between'                    
+                    }}>
+                        <li>
+                            <StyledButton>
+                                Home
+                            </StyledButton>
+                        </li>
+                        <li>
+                            <StyledButton>
+                                Serviços
+                            </StyledButton>
+                        </li>
+                        <li>
+                            <StyledButton>
+                                Sobre
+                            </StyledButton>
+                        </li>
+                        <li>
+                            <StyledButton>
+                                Contacte
+                            </StyledButton>
+                        </li>
+                    </ul>
                 </StyledNav>
 
                 <div style={{display: "flex", gap: "16px"}}>
@@ -44,8 +59,8 @@ const Header = () => {
                         <Image 
                             alt="instagram"
                             src="/images/instagram-icon.svg"
-                            width={40}
-                            height={40}
+                            width={30}
+                            height={30}
                         />
                     </IconButton>
                 </div>
