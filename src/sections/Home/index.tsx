@@ -7,9 +7,9 @@ const Home = () => {
         <>
             <section 
                 style={{
-                    paddingTop: '100px',
-                    height: "90dvh"
-
+                    paddingTop: '70px',
+                    height: "90dvh",
+                    position: 'relative'
                 }}
             >
                 <Container style={{maxWidth: "1800px"}}>
@@ -49,6 +49,7 @@ const Home = () => {
                                     position: 'absolute',
                                     bottom: '-55px',
                                     left: '-180px',
+                                    zIndex: -2
                                 }}
                             />
                             <SecondBricksBlur />
@@ -63,7 +64,8 @@ const Home = () => {
                                     position: 'absolute', 
                                     bottom: '-100px',
                                     right: '-170px',
-                                    filter: 'opacity(80%)'                                    
+                                    filter: 'opacity(80%)',
+                                    zIndex: -2                                    
                                 }}
                             />
 

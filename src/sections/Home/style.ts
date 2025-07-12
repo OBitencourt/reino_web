@@ -50,7 +50,6 @@ export const Title = styled.h1`
         font-size: 3rem;
         text-align: center;
         line-height: 120%;
-        margin-top: 12px;
         width: 90%;
         background: linear-gradient(to bottom, #ffffff, #BB8FFA 90% );
         background-clip: text;
@@ -74,8 +73,8 @@ export const Subtitle = styled.h2`
     margin-top: 42px;
 
     @media (max-width: 430px) {
-        font-size: 1.5rem;
-        width: 90%;
+        font-size: 1.1rem;
+        width: 70%;
         margin-top: 12px;
     }
 `
@@ -177,6 +176,15 @@ export const FirstBricksBlur = styled.div`
     position: absolute;
     bottom: 10px;
     left: 10px;
+    z-index: -1;
+
+    @media (max-width: 430px) {
+        bottom: -100px;
+        left: -100px;
+        width: 200px;
+        height: 200px;
+        filter: blur(50px);
+    }
 `
 
 export const SecondBricksBlur = styled.div`
@@ -188,6 +196,15 @@ export const SecondBricksBlur = styled.div`
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: -1;
+
+    @media (max-width: 430px) {
+        bottom: -100px;
+        right: -100px;
+        width: 200px;
+        height: 200px;
+        filter: blur(50px);
+    }
 `
 
 // MOBILE ESSENTIALLY
