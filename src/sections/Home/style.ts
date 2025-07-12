@@ -19,7 +19,7 @@ export const Title = styled.h1`
     text-align: center;
     color: var(--text-color);
     margin: 0 auto;
-    font-size: 8rem;
+    font-size: 6rem;
     font-family: var(--font-almarai);
     line-height: 90%;
     background: linear-gradient(to right, #ffffff, #BB8FFA 90% );
@@ -28,7 +28,7 @@ export const Title = styled.h1`
     -webkit-text-fill-color: transparent;
 
     span {
-        font-size: 10rem;
+        font-size: 8rem;
         font-weight: 900;
     }
 
@@ -68,7 +68,7 @@ export const Title = styled.h1`
 export const Subtitle = styled.h2`
     text-align: center;
     font-family: var(--font-manrope);
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 500;
     color: var(--cs);
     margin-top: 42px;
@@ -83,7 +83,7 @@ export const Subtitle = styled.h2`
 export const Divider = styled.div`
     display: flex;
     align-self: center;
-    width: 70%;
+    width: 50%;
     height: 1.5px;
     background: linear-gradient(to right, #090909, #832EFF 50% , #090909 );
     margin-top: 42px;
@@ -110,12 +110,12 @@ export const ButtonsWrapper = styled.div`
 
 
 export const PrimaryButton = styled.button`
-    padding: 22px 72px;
+    padding: 24px 54px;
     border-radius: 18px;
     border: 2px solid #A161FF;
-    color: #ffffff;
+    color: #f1f1f1;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,11 +141,11 @@ export const PrimaryButton = styled.button`
 `
 
 export const SecondaryButton = styled.button`
-    padding: 22px 68px;
+    padding: 24px 48px;
     border-radius: 18px;
     color: var(--cp);
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,10 +173,10 @@ export const FirstBricksBlur = styled.div`
     height: 400px;
     background-color: var(--cp);
     border-radius: 100%;
-    filter: blur(200px);
+    filter: blur(150px);
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 10px;
+    left: 10px;
 `
 
 export const SecondBricksBlur = styled.div`
@@ -184,7 +184,7 @@ export const SecondBricksBlur = styled.div`
     height: 400px;
     background-color: var(--cp);
     border-radius: 100%;
-    filter: blur(200px);
+    filter: blur(150px);
     position: absolute;
     bottom: 0;
     right: 0;

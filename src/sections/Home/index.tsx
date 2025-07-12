@@ -39,30 +39,31 @@ const Home = () => {
 
                             <FirstBricksBlur />
                             <Image 
-                                src="/images/brick-mask1.svg"
+                                src="/images/brick-with-mask.webp"
                                 alt="bricks"
                                 width={800}
                                 height={200}
+                                loading="lazy"                               
                                 style={{
                                     height: 'auto',
                                     position: 'absolute',
                                     bottom: '-55px',
                                     left: '-180px',
-                                    filter: 'opacity(40%)'
                                 }}
                             />
                             <SecondBricksBlur />
                             <Image 
-                                src="/images/brick-mask2.svg"
+                                src="/images/brick-with-mask2.webp"
                                 alt="bricks"
                                 width={800}
                                 height={200}
+                                loading="lazy"
                                 style={{
                                     height: 'auto',
-                                    position: 'absolute',
+                                    position: 'absolute', 
                                     bottom: '-100px',
                                     right: '-170px',
-                                    filter: 'opacity(30%)'                                    
+                                    filter: 'opacity(80%)'                                    
                                 }}
                             />
 
