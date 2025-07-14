@@ -130,3 +130,68 @@ export const MenuButton = styled.button`
     }
   }
 `
+
+interface MenuMobileProps {
+  isOpen: boolean;
+}
+
+export const MenuMobile = styled.div.attrs(() => ({}))<MenuMobileProps>`
+  width: 84%;
+  height: 630px;
+  border-radius: 20px;
+  padding: 48px;
+  position: absolute;
+  top: 20px;
+  left: 8%;
+  background-color: #0f0f0f;
+  z-index: 1;
+
+  box-shadow:
+    0px 0px 0px rgba(3, 7, 18, 0.01),
+    0px 0px 0px rgba(3, 7, 18, 0.02),
+    0px 0px 0px rgba(3, 7, 18, 0.02),
+    0px 0px 0px rgba(3, 7, 18, 0.03),
+    0px 0px 1px rgba(3, 7, 18, 0.04),
+    0px 0px 1px rgba(3, 7, 18, 0.05),
+    0px 0px 1px rgba(3, 7, 18, 0.06),
+    0px 0px 2px rgba(3, 7, 18, 0.06),
+    0px 0px 2px rgba(3, 7, 18, 0.07),
+    0px 0px 3px rgba(3, 7, 18, 0.08);
+
+  opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
+  transform: ${({ isOpen }) => (isOpen ? 'scale(1)' : 'scale(0.9)')};
+  pointer-events: ${({ isOpen }) => (isOpen ? 'auto' : 'none')};
+  transition: all 0.3s ease-in-out;
+
+  animation: ${({ isOpen }) => (isOpen ? 'enter 0.5s cubic-bezier(0.075, 0.82, 0.165, 1)' : 'none')};
+
+  @keyframes enter {
+    0% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+`;
+
+export const MenuNavButton = styled.button`
+  width: 100%;
+  padding: 16px;
+  color: var(--text-color);
+  transition: all 200ms ease-in-out;
+  background-color: transparent;
+  border-radius: 12px;
+
+
+  &:active {
+    filter: opacity(0.5);
+    background-color: #bbbbbb47;
+  }
+  
+
+
+
+`

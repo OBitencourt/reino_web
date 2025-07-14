@@ -1,7 +1,17 @@
+"use client";
+
 import Image from "next/image"
-import { GradientButtonWrapper, IconButton, MenuButton, SpecialButton, StyledButton, StyledHeader, StyledNav } from "./style"
+import { GradientButtonWrapper, IconButton, MenuButton, MenuMobile, MenuNavButton, SpecialButton, StyledButton, StyledHeader, StyledNav } from "./style"
+import { useState } from "react"
 
 const Header = () => {
+
+    const [open, setisOpen] = useState(false)
+
+    const handleIsOpen = () => {
+        setisOpen(!open)
+        console.log(open)
+    }
 
     return (
         <>  
@@ -64,7 +74,9 @@ const Header = () => {
                         />
                     </IconButton>
                 </div>
-                <MenuButton>
+                <MenuButton
+                    onClick={handleIsOpen}
+                >
                     <Image 
                         src="/images/menu-icon.svg"
                         alt="menu-icon"
@@ -73,6 +85,55 @@ const Header = () => {
                     />
                 </MenuButton>
             </StyledHeader>
+            <MenuMobile
+                isOpen={open}
+            >
+                <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '50px', borderBottom: '0.8px solid #bbbbbb1b', paddingBottom: '36px'}}>
+                    <Image 
+                        alt="logo"
+                        src="/images/reinoweb-logo.svg"
+                        width={35}
+                        height={35}
+
+                        style={{
+                            height: 'auto',
+                            filter: 'opacity(0.8)'
+                        }}
+                    />
+
+                    <div
+                        onClick={handleIsOpen}
+                    >
+
+                        <Image 
+                            alt="logo"
+                            src="/images/close-icon.svg"
+                            width={35}
+                            height={35}
+
+                            style={{
+                                height: 'auto',
+                                filter: 'opacity(0.3)'
+                            }}
+                        />
+                    </div>
+                </div>
+                <div className="flex flex-col gap-4 mt-10">
+                    <MenuNavButton>
+                        Home
+                    </MenuNavButton>
+                    <MenuNavButton>
+                        Nossos Serviços
+                    </MenuNavButton>
+                    <MenuNavButton>
+                        Sobre nós
+                    </MenuNavButton>
+                    <MenuNavButton>
+                        Contato
+                    </MenuNavButton>
+
+                </div>
+            </MenuMobile>
         </>
     )
 }
