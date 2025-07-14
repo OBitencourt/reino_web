@@ -13,6 +13,20 @@ const Header = () => {
         console.log(open)
     }
 
+    const scrollToSection = (id: string, isMobile: boolean) => {
+        const section = document.getElementById(id)
+
+        if(section && isMobile == false) {
+            section.scrollIntoView({behavior: 'smooth'})
+        }
+
+        if(section && isMobile == true) {
+            section.scrollIntoView({behavior: 'smooth'})
+
+            setisOpen(false)
+        }
+    }
+
     return (
         <>  
             
@@ -37,22 +51,30 @@ const Header = () => {
                         justifyContent: 'space-between'                    
                     }}>
                         <li>
-                            <StyledButton>
+                            <StyledButton   
+                                onClick={() => scrollToSection('home', false)}
+                            >
                                 Home
                             </StyledButton>
                         </li>
                         <li>
-                            <StyledButton>
+                            <StyledButton
+                                onClick={() => scrollToSection('services', false)}
+                            >
                                 Serviços
                             </StyledButton>
                         </li>
                         <li>
-                            <StyledButton>
+                            <StyledButton
+                                onClick={() => scrollToSection('about', false)}
+                            >
                                 Sobre
                             </StyledButton>
                         </li>
                         <li>
-                            <StyledButton>
+                            <StyledButton
+                                onClick={() => scrollToSection('contact', false)}
+                            >
                                 Contacte
                             </StyledButton>
                         </li>
@@ -86,7 +108,7 @@ const Header = () => {
                 </MenuButton>
             </StyledHeader>
             <MenuMobile
-                isOpen={open}
+                $isOpen={open}
             >
                 <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '50px', borderBottom: '0.8px solid #bbbbbb1b', paddingBottom: '36px'}}>
                     <Image 
@@ -119,16 +141,24 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="flex flex-col gap-4 mt-10">
-                    <MenuNavButton>
+                    <MenuNavButton
+                        onClick={() => scrollToSection('home', true)}
+                    >
                         Home
                     </MenuNavButton>
-                    <MenuNavButton>
+                    <MenuNavButton
+                        onClick={() => scrollToSection('services', true)}
+                    >
                         Nossos Serviços
                     </MenuNavButton>
-                    <MenuNavButton>
+                    <MenuNavButton
+                        onClick={() => scrollToSection('about', true)}
+                    >
                         Sobre nós
                     </MenuNavButton>
-                    <MenuNavButton>
+                    <MenuNavButton
+                        onClick={() => scrollToSection('contact', true)}
+                    >
                         Contato
                     </MenuNavButton>
 

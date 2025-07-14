@@ -132,7 +132,7 @@ export const MenuButton = styled.button`
 `
 
 interface MenuMobileProps {
-  isOpen: boolean;
+  $isOpen: boolean;
 }
 
 export const MenuMobile = styled.div.attrs(() => ({}))<MenuMobileProps>`
@@ -158,12 +158,12 @@ export const MenuMobile = styled.div.attrs(() => ({}))<MenuMobileProps>`
     0px 0px 2px rgba(3, 7, 18, 0.07),
     0px 0px 3px rgba(3, 7, 18, 0.08);
 
-  opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
-  transform: ${({ isOpen }) => (isOpen ? 'scale(1)' : 'scale(0.9)')};
-  pointer-events: ${({ isOpen }) => (isOpen ? 'auto' : 'none')};
+  opacity: ${({ $isOpen }) => ($isOpen ? 1 : 0)};
+  transform: ${({ $isOpen }) => ($isOpen ? 'scale(1)' : 'scale(0.9)')};
+  pointer-events: ${({ $isOpen }) => ($isOpen ? 'auto' : 'none')};
   transition: all 0.3s ease-in-out;
 
-  animation: ${({ isOpen }) => (isOpen ? 'enter 0.5s cubic-bezier(0.075, 0.82, 0.165, 1)' : 'none')};
+  animation: ${({ $isOpen }) => ($isOpen ? 'enter 0.5s cubic-bezier(0.075, 0.82, 0.165, 1)' : 'none')};
 
   @keyframes enter {
     0% {
