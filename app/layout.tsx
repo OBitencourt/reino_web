@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Almarai, DM_Sans, Manrope } from "next/font/google";
 import "./globals.css";
+import StyledComponentsRegistry from "./registry";
 
 const almarai = Almarai({
   variable: "--font-almarai",
@@ -34,7 +35,9 @@ export default function RootLayout({
       <body
         className={`${almarai.variable} ${manrope.variable} ${dmSans.variable} antialiased`}
       >
-        {children}
+        <StyledComponentsRegistry>
+          {children}
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
