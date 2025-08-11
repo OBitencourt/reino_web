@@ -22,7 +22,7 @@ export const Title = styled.h1`
     font-size: 6rem;
     font-family: var(--font-almarai);
     line-height: 90%;
-    background: linear-gradient(to right, #ffffff, #BB8FFA 90% );
+    background: linear-gradient(to bottom, #ffffff, #BB8FFA 90% );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -109,9 +109,8 @@ export const ButtonsWrapper = styled.div`
 
 
 export const PrimaryButton = styled.button`
-    padding: 24px 54px;
+    padding: 16px 54px;
     border-radius: 18px;
-    border: 2px solid #A161FF;
     color: #f1f1f1;
     font-weight: 600;
     font-size: 1.1rem;
@@ -119,12 +118,11 @@ export const PrimaryButton = styled.button`
     justify-content: center;
     align-items: center;
     background-color: var(--cp);
-    box-shadow: inset 0px 0px 12px 4px #451C99;
     transition: all 200ms ease-in-out;
     cursor: pointer;
 
     &:hover {
-        box-shadow: inset 0px 0px 32px 8px #451C99;
+        filter: brightness(0.8);
     }
 
     &:active {
@@ -140,7 +138,7 @@ export const PrimaryButton = styled.button`
 `
 
 export const SecondaryButton = styled.button`
-    padding: 24px 48px;
+    padding: 16px 48px;
     border-radius: 18px;
     color: var(--cp);
     font-weight: 600;

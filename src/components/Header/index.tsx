@@ -31,16 +31,19 @@ const Header = () => {
         <>  
             
             <StyledHeader>
-                <Image 
-                    alt="logo"
-                    src="/images/reinoweb-logo.svg"
-                    width={50}
-                    height={50}
+                <div className="w-[25%]">
 
-                    style={{
-                        height: 'auto'
-                    }}
-                />
+                    <Image 
+                        alt="logo"
+                        src="/images/reinoweb-logo.svg"
+                        width={50}
+                        height={50}
+
+                        style={{
+                            height: 'auto'
+                        }}
+                    />
+                </div>
 
                 <StyledNav>
                     
@@ -81,7 +84,7 @@ const Header = () => {
                     </ul>
                 </StyledNav>
 
-                <div style={{display: "flex", gap: "16px"}}>
+                <div className="flex gap-[16px] w-[25%] justify-end ">
                     <GradientButtonWrapper>
                         <SpecialButton>
                             Contate já!

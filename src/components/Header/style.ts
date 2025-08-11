@@ -7,6 +7,7 @@ export const StyledHeader = styled.header`
   align-items: center;
   color: white;
   padding: 50px 300px;
+  width: 100%;
 
   @media (max-width: 1500px) {
     padding: 16px;
@@ -34,7 +35,7 @@ export const StyledHeader = styled.header`
 export const StyledNav = styled.nav`
   display: flex;
   justify-content: center;
-  width: 30%;
+  width: 50%;
   gap: 54px;
 
 
