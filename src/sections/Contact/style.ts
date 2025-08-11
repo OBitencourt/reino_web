@@ -21,11 +21,17 @@ export const ContactDiv = styled.div`
     backdrop-filter: blur( 32px );
     -webkit-backdrop-filter: blur( 32px );
     margin-bottom: 32px;
+    transition: all 150ms ease-in-out;
 
     @media (max-width: 430px) {
         width: 90%;
         padding: 38px 32px;
         margin-bottom: 28px;
+    }
+
+    &:hover {
+        backdrop-filter: 50px;
+        background-color:rgba(15, 15, 15, 0.9);
     }
 `
 
@@ -94,7 +100,7 @@ export const StyledButton = styled.button`
     padding: 12px 40px;
     border-radius: 12px;
     border: 2.5px solid var(--cs);
-    color: var(--cs);
+    color: var(--text-color);
     font-weight: 600;
     font-size: 1.4rem;
     display: flex;
@@ -138,6 +144,7 @@ export const Chip = styled.div`
     background-color: transparent;
     border-radius: 50px;
     padding: 12px 32px;
+    transition: all 200ms ease-in-out;
 
     p {
         color: var(--text-color);
@@ -146,5 +153,9 @@ export const Chip = styled.div`
 
     @media (max-width: 430px) {
         width: 100%;
+    }
+
+    &:hover {
+        background-color: #151515;
     }
 `

@@ -110,7 +110,7 @@ export const ButtonsWrapper = styled.div`
 
 export const PrimaryButton = styled.button`
     padding: 16px 54px;
-    border-radius: 18px;
+    border-radius: 12px;
     color: #f1f1f1;
     font-weight: 600;
     font-size: 1.1rem;
@@ -139,8 +139,8 @@ export const PrimaryButton = styled.button`
 
 export const SecondaryButton = styled.button`
     padding: 16px 48px;
-    border-radius: 18px;
-    color: var(--cp);
+    border-radius: 12px;
+    color: var(--cs);
     font-weight: 600;
     font-size: 1.1rem;
     display: flex;
@@ -148,10 +148,14 @@ export const SecondaryButton = styled.button`
     align-items: center;
     transition: all 200ms ease-in-out;
     cursor: pointer;
-    border: 2px solid var(--cp);
+    border: 1px solid var(--cs);
     
     &:active {
         transform: scale(0.97);
+    }
+
+    &:hover {
+        background-color: #151515;
     }
     
     @media (max-width: 430px) {

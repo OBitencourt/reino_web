@@ -25,7 +25,7 @@ const Home = () => {
                     <div style={{display: "flex", justifyContent: "center",}}>
 
                         <Wrapper>
-                            <Appear yAxis={-20} delay={0.5}>
+                            <Appear yAxis={-20} durationTime={1} delay={0.5}>
 
                                 <Title>
                                     Bem vindo ao 
@@ -42,7 +42,7 @@ const Home = () => {
                             
                             <Divider />
 
-                            <Appear yAxis={-20} delay={1.5}>
+                            <Appear yAxis={-20} delay={1.5} durationTime={0.8}>
                                 <ButtonsWrapper>
                                     <PrimaryButton
                                         onClick={() => handleSectionNavigation("contact")}
@@ -57,7 +57,7 @@ const Home = () => {
                                 </ButtonsWrapper>
                             </Appear>
 
-                            <Appear delay={2}>
+                            <Appear delay={2} durationTime={2}>
 
                                 <FirstBricksBlur />
                                 <Image 

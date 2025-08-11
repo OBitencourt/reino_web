@@ -8,7 +8,7 @@ interface Props {
     durationTime?: number
 }
 
-const Appear = ({children, delay, yAxis, xAxis, durationTime}: Props) => {
+const SecondAppear = ({children, delay, yAxis, xAxis, durationTime}: Props) => {
     return (
         <>
             <motion.div
@@ -17,15 +17,16 @@ const Appear = ({children, delay, yAxis, xAxis, durationTime}: Props) => {
                     y: yAxis,
                     x: xAxis
                 }}
-                animate={{
+                whileInView={{
                     opacity: 1,
                     y: 0,
-                    x: 0
+                    x: 0,
                 }}
                 transition={{
                     delay: delay,
-                    duration: durationTime
+                    duration: durationTime,
                 }}
+                viewport={{amount: 0.2, once: true}}
             >
                 {children}
             </motion.div>
@@ -34,4 +35,4 @@ const Appear = ({children, delay, yAxis, xAxis, durationTime}: Props) => {
 }
 
 
-export default Appear
+export default SecondAppear

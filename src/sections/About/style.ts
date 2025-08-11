@@ -80,11 +80,13 @@ export const TwoLittleDivs = styled.div`
 export const CardOne = styled.div`
     text-align: start;
     background-color: var(--card);
+    border: none;
     border-radius: 18px;
     padding: 28px 44px;
     display: flex;
     flex-direction: column;
     min-height: 800px;
+    transition: all 200ms ease-in-out;
 
 
     h3 {
@@ -113,12 +115,17 @@ export const CardOne = styled.div`
             height: auto;
         }
     }
+
+    &:hover {
+        background-color: #151515;
+    }
 `
 export const CardTwo = styled.div`
     background-color: var(--card);
     border-radius: 18px;
     padding: 28px 44px;
     display: flex;
+    transition: all 200ms ease-in-out;
 
     h3 {
         margin-bottom: 28px;
@@ -150,11 +157,16 @@ export const CardTwo = styled.div`
             display: none;
         }
     }
+
+    &:hover {
+        background-color: #151515;
+    }
 `
 export const CardThree = styled.div`
     background-color: var(--card);
     border-radius: 18px;
     padding: 28px 44px;
+    transition: all 200ms ease-in-out;
 
     h3 {
         margin-bottom: 28px;
@@ -174,12 +186,17 @@ export const CardThree = styled.div`
     @media (max-width: 430px) {
         
     }
+
+    &:hover {
+        background-color: #151515;
+    }
 `
 export const CardFour = styled.div`
     background-color: var(--card);
     border-radius: 18px;
     padding: 28px 44px;
     min-height: 415px;
+    transition: all 200ms ease-in-out;
 
     h3 {
         margin-bottom: 28px;
@@ -205,5 +222,9 @@ export const CardFour = styled.div`
         -webkit-background-clip: border-box !important;
         font-weight: bold;
         background-clip: text;
+    }
+
+    &:hover {
+        background-color: #151515;
     }
 `

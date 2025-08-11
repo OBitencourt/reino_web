@@ -30,7 +30,7 @@ const Header = () => {
 
     return (
         <>  
-            <Appear yAxis={-50} delay={2}>
+            <Appear yAxis={-50} durationTime={2} delay={2}>
 
                 <StyledHeader>
                     <div className="w-[25%]">

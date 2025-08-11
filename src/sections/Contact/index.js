@@ -4,6 +4,7 @@ import Container from "@/src/style"
 import Toasty from "@/src/components/Toasty"
 import { useState } from "react"
 import emailjs from "@emailjs/browser"
+import SecondAppear from "@/src/animations/secondAppear"
 
 const Contact = () => {
 
@@ -62,89 +63,94 @@ const Contact = () => {
     return (
 
         <>
-            <section id="contact" style={{height: "100dvh",  position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                <ImageWrapper>
-                    <Image 
-                        src='/images/light-about.webp'
-                        alt="light-about"
-                        width={3000}
-                        height={2000}
-                        style={{
-                            height: 'auto',
-                            margin: '0 auto',
-                            position: 'absolute',
-                            top: '-800px',
-                            zIndex: '-1'
-                        }}
-                    />
-                </ImageWrapper>
-                <Container style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', height: '100dvh', transform: 'translateY(50%)'}}>
+            <SecondAppear delay={0.5} durationTime={1} yAxis={-50}>
 
+                <section id="contact" style={{height: "100dvh",  position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                    <ImageWrapper>
+                        <Image 
+                            src='/images/light-about.webp'
+                            alt="light-about"
+                            width={3000}
+                            height={2000}
+                            style={{
+                                height: 'auto',
+                                margin: '0 auto',
+                                position: 'absolute',
+                                top: '-800px',
+                                zIndex: '-1'
+                            }}
+                        />
+                    </ImageWrapper>
 
-                    <ContactDiv>
-                        <Title>
-                            Contacte-nos
-                        </Title>
-                        <form onSubmit={handleSubmit} className="emailForm">
-                            <StyledInput 
-                                minLength="4"
-                                required
-                                placeholder="Digite seu nome..." 
-                                type="text"
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
-                            />
-                            <StyledInput 
-                                minLength="5"
-                                required
-                                placeholder="Digite seu email..." 
-                                type="email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                            />
-                            <StyledTextArea 
-                                minLength="5"
-                                required
-                                placeholder="Digite sua mensagem..." 
-                                value={message}
-                                onChange={(e) => setMessage(e.target.value)}
-                            />
-                            <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-                                <StyledButton type="submit">
-                                    Enviar
-                                </StyledButton>
-                            </div>
-                        </form>
-                    </ContactDiv>
-                    <ChipsWrappers>
+                    <Container style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', height: '100dvh', transform: 'translateY(50%)'}}>
+                
 
-                        <Chip>
-                            <Image 
-                                src='/images/phone-icon.svg'
-                                alt="phone"
-                                width={30}
-                                height={30}
-                            />
-                            <p>
-                                +351 912 824 064
-                            </p>
-                        </Chip>
-                        <Chip>
-                            <Image 
-                                src='/images/email-icon.svg'
-                                alt="phone"
-                                width={30}
-                                height={30}
-                            />
-                            <p>
-                                reinowebofficial@gmail.com
-                            </p>
-                        </Chip>
-                    </ChipsWrappers>
-                    <Toasty open={openToast} title={toastTitle} message={toastMessage}/>
-                </Container>
-            </section>
+                        
+                        <ContactDiv>
+                            <Title>
+                                Contacte-nos
+                            </Title>
+                            <form onSubmit={handleSubmit} className="emailForm">
+                                <StyledInput 
+                                    minLength="4"
+                                    required
+                                    placeholder="Digite seu nome..." 
+                                    type="text"
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
+                                />
+                                <StyledInput 
+                                    minLength="5"
+                                    required
+                                    placeholder="Digite seu email..." 
+                                    type="email"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                />
+                                <StyledTextArea 
+                                    minLength="5"
+                                    required
+                                    placeholder="Digite sua mensagem..." 
+                                    value={message}
+                                    onChange={(e) => setMessage(e.target.value)}
+                                />
+                                <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+                                    <StyledButton type="submit">
+                                        Enviar
+                                    </StyledButton>
+                                </div>
+                            </form>
+                        </ContactDiv>
+                        <ChipsWrappers>
+
+                            <Chip>
+                                <Image 
+                                    src='/images/phone-icon.svg'
+                                    alt="phone"
+                                    width={30}
+                                    height={30}
+                                />
+                                <p>
+                                    +351 912 824 064
+                                </p>
+                            </Chip>
+                            <Chip>
+                                <Image 
+                                    src='/images/email-icon.svg'
+                                    alt="phone"
+                                    width={30}
+                                    height={30}
+                                />
+                                <p>
+                                    reinowebofficial@gmail.com
+                                </p>
+                            </Chip>
+                        </ChipsWrappers>
+                        <Toasty open={openToast} title={toastTitle} message={toastMessage}/>
+                    </Container>
+                </section>
+            </SecondAppear>
         </>
     )
 }
