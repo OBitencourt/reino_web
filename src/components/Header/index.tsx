@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image"
-import { GradientButtonWrapper, IconButton, MenuButton, MenuMobile, MenuNavButton, SpecialButton, StyledButton, StyledHeader, StyledNav } from "./style"
+import { GradientButtonWrapper, MenuButton, MenuMobile, MenuNavButton, SpecialButton, StyledButton, StyledHeader, StyledNav } from "./style"
 import { useState } from "react"
 import Appear from "@/src/animations/appear";
 

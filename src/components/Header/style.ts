@@ -92,23 +92,6 @@ export const SpecialButton = styled.button`
   }
 `;
 
-export const IconButton = styled.button`
-  padding: 2px 10px;
-  background-color: transparent;
-  border: none;
-  transition: all 200ms ease-in-out;
-  border-radius: 12px;
-  cursor: pointer;
-
-  &:hover {
-    background-color:rgba(153, 153, 153, 0.27);
-
-  }
-  @media (max-width: 1500px) {
-    display: none;
-  }
-`
-
 
 // MOBILE
 

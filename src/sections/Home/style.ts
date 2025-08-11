@@ -75,7 +75,9 @@ export const Subtitle = styled.h2`
     @media (max-width: 430px) {
         font-size: 1.1rem;
         width: 70%;
-        margin-top: 12px;
+        margin: 12px auto;
+        text-align: center
+        
     }
 `
 
@@ -162,6 +164,8 @@ export const SecondaryButton = styled.button`
         padding: 20px 50px;
         width: 100%;
         font-size: 1.3rem;
+        border-radius: 3rem / 3rem;
+        
     }
 `
 
