@@ -61,6 +61,10 @@ export const StyledInput = styled.input`
     &::placeholder {
         color: #ffffff;
     }
+
+    &:focus {
+        border: 1px solid #f1f1f1;
+    }
 `
 
 
@@ -80,6 +84,9 @@ export const StyledTextArea = styled.textarea`
 
     &::placeholder {
         color: #ffffff;
+    }
+    &:focus {
+        border: 1px solid #f1f1f1;
     }
 `
 

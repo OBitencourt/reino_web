@@ -3,6 +3,14 @@ import Container from "../../style"
 import { ButtonsWrapper, Divider, FirstBricksBlur, PrimaryButton, SecondaryButton, SecondBricksBlur, Subtitle, Title, Wrapper } from "./style"
 
 const Home = () => {
+
+    const handleSectionNavigation = (id: string) => {
+        const section = document.getElementById(id)
+        if(section) {
+            section.scrollIntoView({ behavior: "smooth" })
+        }
+    }
+
     return (
         <>
             <section 
@@ -29,10 +37,14 @@ const Home = () => {
                             </Subtitle>
                             <Divider />
                             <ButtonsWrapper>
-                                <PrimaryButton>
+                                <PrimaryButton
+                                    onClick={() => handleSectionNavigation("contact")}
+                                >
                                     Fale Conosco!
                                 </PrimaryButton>
-                                <SecondaryButton>
+                                <SecondaryButton
+                                    onClick={() => handleSectionNavigation("services")}
+                                >
                                     Nossos Serviços
                                 </SecondaryButton>
                             </ButtonsWrapper>
