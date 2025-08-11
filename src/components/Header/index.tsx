@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { GradientButtonWrapper, IconButton, MenuButton, MenuMobile, MenuNavButton, SpecialButton, StyledButton, StyledHeader, StyledNav } from "./style"
 import { useState } from "react"
+import Appear from "@/src/animations/appear";
 
 const Header = () => {
 
@@ -29,87 +30,82 @@ const Header = () => {
 
     return (
         <>  
-            
-            <StyledHeader>
-                <div className="w-[25%]">
+            <Appear yAxis={-50} delay={2}>
 
-                    <Image 
-                        alt="logo"
-                        src="/images/reinoweb-logo.svg"
-                        width={50}
-                        height={50}
+                <StyledHeader>
+                    <div className="w-[25%]">
 
-                        style={{
-                            height: 'auto'
-                        }}
-                    />
-                </div>
-
-                <StyledNav>
-                    
-                    <ul style={{
-                        listStyle: 'none',
-                        display: 'flex',    
-                        width: '100%',
-                        justifyContent: 'space-between'                    
-                    }}>
-                        <li>
-                            <StyledButton   
-                                onClick={() => scrollToSection('home', false)}
-                            >
-                                Home
-                            </StyledButton>
-                        </li>
-                        <li>
-                            <StyledButton
-                                onClick={() => scrollToSection('services', false)}
-                            >
-                                Serviços
-                            </StyledButton>
-                        </li>
-                        <li>
-                            <StyledButton
-                                onClick={() => scrollToSection('about', false)}
-                            >
-                                Sobre
-                            </StyledButton>
-                        </li>
-                        <li>
-                            <StyledButton
-                                onClick={() => scrollToSection('contact', false)}
-                            >
-                                Contacte
-                            </StyledButton>
-                        </li>
-                    </ul>
-                </StyledNav>
-
-                <div className="flex gap-[16px] w-[25%] justify-end ">
-                    <GradientButtonWrapper>
-                        <SpecialButton>
-                            Contate já!
-                        </SpecialButton>
-                    </GradientButtonWrapper>
-                    <IconButton>
                         <Image 
-                            alt="instagram"
-                            src="/images/instagram-icon.svg"
-                            width={30}
-                            height={30}
+                            alt="logo"
+                            src="/images/reinoweb-logo.svg"
+                            width={50}
+                            height={50}
+
+                            style={{
+                                height: 'auto'
+                            }}
                         />
-                    </IconButton>
-                </div>
-                <MenuButton
-                    onClick={handleIsOpen}
-                >
-                    <Image 
-                        src="/images/menu-icon.svg"
-                        alt="menu-icon"
-                        width={40}
-                        height={40}
-                    />
-                </MenuButton>
-            </StyledHeader>
+                    </div>
+
+                    <StyledNav>
+                        
+                        <ul style={{
+                            listStyle: 'none',
+                            display: 'flex',    
+                            width: '100%',
+                            justifyContent: 'space-between'                    
+                        }}>
+                            <li>
+                                <StyledButton   
+                                    onClick={() => scrollToSection('home', false)}
+                                >
+                                    Home
+                                </StyledButton>
+                            </li>
+                            <li>
+                                <StyledButton
+                                    onClick={() => scrollToSection('services', false)}
+                                >
+                                    Serviços
+                                </StyledButton>
+                            </li>
+                            <li>
+                                <StyledButton
+                                    onClick={() => scrollToSection('about', false)}
+                                >
+                                    Sobre
+                                </StyledButton>
+                            </li>
+                            <li>
+                                <StyledButton
+                                    onClick={() => scrollToSection('contact', false)}
+                                >
+                                    Contacte
+                                </StyledButton>
+                            </li>
+                        </ul>
+                    </StyledNav>
+
+                    <div className="flex gap-[16px] w-[25%] justify-end ">
+                        <GradientButtonWrapper>
+                            <SpecialButton>
+                                Contate já!
+                            </SpecialButton>
+                        </GradientButtonWrapper>
+                    </div>
+                    <MenuButton
+                        onClick={handleIsOpen}
+                    >
+                        <Image 
+                            src="/images/menu-icon.svg"
+                            alt="menu-icon"
+                            width={40}
+                            height={40}
+                        />
+                    </MenuButton>
+                </StyledHeader>
+            </Appear>
+
             <MenuMobile
                 $isOpen={open}
             >

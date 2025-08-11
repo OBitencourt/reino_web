@@ -175,6 +175,7 @@ export const FirstBricksBlur = styled.div`
     bottom: 10px;
     left: 10px;
     z-index: -1;
+    animation: 3s ease-in-out 2s infinite pulse;
 
     @media (max-width: 430px) {
         bottom: -100px;
@@ -182,6 +183,24 @@ export const FirstBricksBlur = styled.div`
         width: 200px;
         height: 200px;
         filter: blur(50px);
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            filter: blur(150px) brightness(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+            filter: blur(150px) brightness(1.2);
+
+        }
+
+        100% {
+            transform: scale(1);
+            filter: blur(150px) brightness(1);
+        }
     }
 `
 
@@ -195,6 +214,7 @@ export const SecondBricksBlur = styled.div`
     bottom: 0;
     right: 0;
     z-index: -1;
+    animation: 3s ease-in-out 2s infinite pulse;
 
     @media (max-width: 430px) {
         bottom: -100px;
@@ -202,6 +222,24 @@ export const SecondBricksBlur = styled.div`
         width: 200px;
         height: 200px;
         filter: blur(50px);
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            filter: blur(150px) brightness(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+            filter: blur(150px) brightness(1.2);
+
+        }
+
+        100% {
+            transform: scale(1);
+            filter: blur(150px) brightness(1);
+        }
     }
 `
 
