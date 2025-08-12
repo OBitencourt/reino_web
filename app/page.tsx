@@ -9,7 +9,7 @@ const Page = () => {
   return (
 
     <>
-      <Header />
+        <Header />
         <Home />
         <Services />
         <About />

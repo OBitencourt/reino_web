@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { GradientButtonWrapper, MenuButton, MenuMobile, MenuNavButton, SpecialButton, StyledButton, StyledHeader, StyledNav } from "./style"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Appear from "@/src/animations/appear";
 
 const Header = () => {
@@ -13,6 +13,18 @@ const Header = () => {
         setisOpen(!open)
         console.log(open)
     }
+
+    useEffect(() => {
+        if (open) {
+            document.body.style.overflowY = "hidden";
+        } else {
+            document.body.style.overflowY = "auto"; 
+        }
+
+        return () => {
+            document.body.style.overflowY = "auto";
+        };
+    }, [open]);
 
     const scrollToSection = (id: string, isMobile: boolean) => {
         const section = document.getElementById(id)
@@ -27,6 +39,7 @@ const Header = () => {
             setisOpen(false)
         }
     }
+
 
     return (
         <>  
