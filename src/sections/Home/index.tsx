@@ -48,6 +48,14 @@ const Home = () => {
                                         onClick={() => handleSectionNavigation("contact")}
                                     >
                                         Fale Conosco!
+                                        <div className="bg-(--cs) rounded-full p-2 ml-6">
+                                            <Image 
+                                                src="/images/arrow-bottom.svg"
+                                                width={20}
+                                                height={20}
+                                                alt="arrow-down"
+                                            />
+                                        </div>
                                     </PrimaryButton>
                                     <SecondaryButton
                                         onClick={() => handleSectionNavigation("services")}

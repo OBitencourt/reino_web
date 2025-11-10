@@ -71,39 +71,50 @@ const Header = () => {
                             justifyContent: 'space-between'                    
                         }}>
                             <li>
-                                <StyledButton   
+                                <div
+                                    className="flex justify-center items-center text-(--dark-text) transition text-[1.1rem] font-semibold cursor-pointer gap-3 hover:text-[#CCCCCC]"   
                                     onClick={() => scrollToSection('home', false)}
                                 >
                                     Home
-                                </StyledButton>
+                                </div>
                             </li>
                             <li>
-                                <StyledButton
+                                <div
+                                    className="flex justify-center items-center text-(--dark-text) transition text-[1.1rem] font-semibold cursor-pointer gap-3 hover:text-[#CCCCCC]"
                                     onClick={() => scrollToSection('services', false)}
                                 >
                                     Serviços
-                                </StyledButton>
+                                </div>
                             </li>
                             <li>
-                                <StyledButton
+                                <div
+                                    className="flex justify-center items-center text-(--dark-text) transition text-[1.1rem] font-semibold cursor-pointer gap-3 hover:text-[#CCCCCC]"
                                     onClick={() => router.push("/portfolio")}
                                 >
-                                    Portfólio <span></span>
-                                </StyledButton>
+                                    Portfólio
+                                    <Image 
+                                        src="/images/arrow-right-up.svg"
+                                        width={15}
+                                        height={15}
+                                        alt="arrow-right-up"
+                                    />
+                                </div>
                             </li>
                             <li>
-                                <StyledButton
+                                <div
+                                    className="flex justify-center items-center text-(--dark-text) transition text-[1.1rem] font-semibold cursor-pointer gap-3 hover:text-[#CCCCCC]"
                                     onClick={() => scrollToSection('about', false)}
                                 >
                                     Sobre
-                                </StyledButton>
+                                </div>
                             </li>
                             <li>
-                                <StyledButton
+                                <div
+                                    className="flex justify-center items-center text-(--dark-text) transition text-[1.1rem] font-semibold cursor-pointer gap-3 hover:text-[#CCCCCC]"
                                     onClick={() => scrollToSection('contact', false)}
                                 >
                                     Contacte
-                                </StyledButton>
+                                </div>
                             </li>
                         </ul>
                     </StyledNav>

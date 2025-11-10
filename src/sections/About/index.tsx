@@ -9,7 +9,7 @@ const About = () => {
     return (
 
         <>
-            <section id="about" style={{ position: 'relative'}}>
+            <section id="about" style={{ position: 'relative', zIndex: 2}}>
                 <SecondAppear delay={0.5} durationTime={1} yAxis={-70}>
 
                     <Container>

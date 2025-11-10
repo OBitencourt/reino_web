@@ -111,10 +111,10 @@ export const ButtonsWrapper = styled.div`
 
 
 export const PrimaryButton = styled.button`
-    padding: 16px 54px;
-    border-radius: 12px;
+    padding: 16px 32px 16px 42px;
+    border-radius: 100px;
     color: #f1f1f1;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.1rem;
     display: flex;
     justify-content: center;
@@ -143,7 +143,7 @@ export const SecondaryButton = styled.button`
     padding: 16px 48px;
     border-radius: 12px;
     color: var(--cs);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.1rem;
     display: flex;
     justify-content: center;

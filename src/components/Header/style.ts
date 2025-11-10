@@ -54,7 +54,7 @@ export const StyledButton = styled.button`
   font-size: 1.1rem;
   font-weight: 500;
   cursor: pointer;
-
+  gap: 8px;
 
   &:hover {
     color: #CCCCCC;
