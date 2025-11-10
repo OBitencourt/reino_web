@@ -52,7 +52,7 @@ export const StyledButton = styled.button`
   transition: all 200ms ease-in-out;
   font-family: var(--font-dm-sans);
   font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: 500;
   cursor: pointer;
 
 

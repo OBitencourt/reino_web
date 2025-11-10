@@ -4,8 +4,10 @@ import Image from "next/image"
 import { GradientButtonWrapper, MenuButton, MenuMobile, MenuNavButton, SpecialButton, StyledButton, StyledHeader, StyledNav } from "./style"
 import { useEffect, useState } from "react"
 import Appear from "@/src/animations/appear";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
+    const router = useRouter()
 
     const [open, setisOpen] = useState(false)
 
@@ -80,6 +82,13 @@ const Header = () => {
                                     onClick={() => scrollToSection('services', false)}
                                 >
                                     Serviços
+                                </StyledButton>
+                            </li>
+                            <li>
+                                <StyledButton
+                                    onClick={() => router.push("/portfolio")}
+                                >
+                                    Portfólio <span></span>
                                 </StyledButton>
                             </li>
                             <li>

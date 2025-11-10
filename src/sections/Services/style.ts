@@ -88,13 +88,11 @@ export const Card = styled.div`
     height: 600px;
     background-color: var(--card);
     border-radius: 18px;
-    box-shadow: 
-        inset 0px 0px 54px -22px var(--cs)
-        ;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    padding: 40px 84px;
+    padding: 40px 68px;
 
     @media (max-width: 430px) {
         width: 100%;
