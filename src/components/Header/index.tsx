@@ -108,20 +108,12 @@ const Header = () => {
                                     Sobre
                                 </div>
                             </li>
-                            <li>
-                                <div
-                                    className="flex justify-center items-center text-(--dark-text) transition text-[1.1rem] font-semibold cursor-pointer gap-3 hover:text-[#CCCCCC]"
-                                    onClick={() => scrollToSection('contact', false)}
-                                >
-                                    Contacte
-                                </div>
-                            </li>
                         </ul>
                     </StyledNav>
 
                     <div className="flex gap-[16px] w-[25%] justify-end ">
                         <GradientButtonWrapper>
-                            <SpecialButton>
+                            <SpecialButton onClick={() => scrollToSection('contact', false)}>
                                 Contate já!
                             </SpecialButton>
                         </GradientButtonWrapper>

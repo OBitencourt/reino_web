@@ -1,10 +1,13 @@
+"use client"
 import Container from "@/src/style"
 import { Card, CardsWrapper, CardWrapper, Chip, ChipWrapper, Circle, CircleWrapper, ImageWrapper, Info, Title } from "./style"
 import Image from "next/image"
 import SecondAppear from "@/src/animations/secondAppear"
 import MovingDotsSide from "@/src/animations/movingDotsSide"
+import { useRouter } from "next/navigation"
 
 const Services = () => {
+    const router = useRouter()
     return (
         <>
             <section id="services" style={{paddingBottom: "42px" ,position: 'relative'}}>
@@ -52,7 +55,10 @@ const Services = () => {
                                     <Info>
                                         Desenhamos e montamos seus designs modernos e funcionais, pensados para surpreender e guiar o seu usuário final. Projetos em Figma com foco na usabilidade, estética e identidade visual única para o seu site e sua empresa.
                                     </Info>
-                                    <button className="w-full self-baseline hover:brightness-110 cursor-pointer transition border border-transparent hover:border-(--border) rounded-lg mt-4 bg-[#1E1E1E] py-2 text-white font-normal">
+                                    <button
+                                        onClick={() => router.push("/portfolio")}
+                                        className="w-full self-baseline hover:brightness-110 cursor-pointer transition border border-transparent hover:border-(--border) rounded-lg mt-4 bg-[#1E1E1E] py-2 text-white font-normal"
+                                    >
                                         Ver Designs
                                     </button>
                                 </Card>
@@ -83,7 +89,10 @@ const Services = () => {
                                     </Info>
                                     <div className="flex justify-end w-full">
                                         
-                                        <button className="w-full hover:brightness-110 cursor-pointer transition border border-transparent hover:border-(--border) rounded-lg mt-4 bg-[#1E1E1E] py-2 text-white font-normal">
+                                        <button 
+                                            onClick={() => router.push("/portfolio")}
+                                            className="w-full hover:brightness-110 cursor-pointer transition border border-transparent hover:border-(--border) rounded-lg mt-4 bg-[#1E1E1E] py-2 text-white font-normal"
+                                        >
                                             Ver Projetos
                                         </button>
                                     </div>
@@ -110,9 +119,12 @@ const Services = () => {
 
                                     </ChipWrapper>
                                     <Info>
-                                        Transforme seu perfil em um verdadeiro trono digital. Criamos artes profissionais,personalizadas e exclusivas para postagens de redes sociais, com foco na sua identidade visual, engajamento e comunicação clara com seu público.
+                                        Transforme seu perfil em um verdadeiro trono digital. Criamos artes profissionais, personalizadas e exclusivas para postagens de redes sociais, com foco na sua identidade visual, engajamento e comunicação clara com seu público.
                                     </Info>
-                                    <button className="w-full hover:brightness-110 cursor-pointer transition border border-transparent hover:border-(--border) rounded-lg mt-4 bg-[#1E1E1E] py-2 text-white font-normal">
+                                    <button
+                                        onClick={() => router.push("/portfolio")}
+                                        className="w-full hover:brightness-110 cursor-pointer transition border border-transparent hover:border-(--border) rounded-lg mt-4 bg-[#1E1E1E] py-2 text-white font-normal"
+                                    >
                                         Ver Designs
                                     </button>
                                 </Card>
