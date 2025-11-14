@@ -70,7 +70,7 @@ export default function MovingDotsSide({ dotCount = 55 }: MovingDotsProps) {
             height: `${size}px`,
             borderRadius: "50%",
             backgroundColor: "var(--cs)", // 💡 usa a variável CSS
-            opacity: "5px",
+            opacity,
             boxShadow: `0 0 6px var(--cs)`,
           }}
         />
