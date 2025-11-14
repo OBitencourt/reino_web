@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image"
-import { GradientButtonWrapper, MenuButton, MenuMobile, MenuNavButton, SpecialButton, StyledButton, StyledHeader, StyledNav } from "./style"
+import { GradientButtonWrapper, MenuButton, MenuMobile, MenuNavButton, SpecialButton, StyledHeader, StyledNav } from "./style"
 import { useEffect, useState } from "react"
 import Appear from "@/src/animations/appear";
 import { useRouter } from "next/navigation";
@@ -174,6 +174,11 @@ const Header = () => {
                         onClick={() => scrollToSection('services', true)}
                     >
                         Nossos Serviços
+                    </MenuNavButton>
+                    <MenuNavButton
+                        onClick={() => router.push("/portfolio")}
+                    >
+                        Portfólio
                     </MenuNavButton>
                     <MenuNavButton
                         onClick={() => scrollToSection('about', true)}

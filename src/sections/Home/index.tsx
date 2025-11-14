@@ -2,6 +2,7 @@ import Image from "next/image"
 import Container from "../../style"
 import { ButtonsWrapper, Divider, FirstBricksBlur, PrimaryButton, SecondaryButton, SecondBricksBlur, Subtitle, Title, Wrapper } from "./style"
 import Appear from "@/src/animations/appear"
+import { useEffect } from "react"
 
 const Home = () => {
 
@@ -11,6 +12,13 @@ const Home = () => {
             section.scrollIntoView({ behavior: "smooth" })
         }
     }
+
+    useEffect(() => {
+        document.body.style.overflowY = "hidden"
+        setTimeout(() => {
+            document.body.style.overflowY = "auto"
+        }, 3000)
+    }, [])
 
     return (
         <>

@@ -31,7 +31,7 @@ export default function Portfolio () {
 
                                 <div 
                                     key={project.id}
-                                    className="flex justify-between flex-col bg-zinc-800 rounded-lg w-[32%] border border-transparent hover:border-(--border) transition duration-100 ease-in"
+                                    className="flex justify-between flex-col bg-zinc-800 rounded-lg lg:w-[32%] sm:w-full border border-transparent hover:border-(--border) transition duration-100 ease-in"
                                 >
                                     <div className="p-4 border-b border-zinc-700">
 
@@ -61,10 +61,10 @@ export default function Portfolio () {
                                             {project.description}
                                         </p>
                                     </div>
-                                    <div className="p-4 flex gap-4">
+                                    <div className="p-4 flex gap-4 sm:gap-2">
                                         {
                                             project.linkDribble && (
-                                                <a href={project.linkDribble} target="new_blank" className="w-full bg-(--cp) font-medium tracking-wide text-md text-white rounded-lg py-2 hover:brightness-90 transition cursor-pointer flex gap-4 justify-center items-center">
+                                                <a href={project.linkDribble} target="new_blank" className="w-full bg-(--cp) sm:px-2 sm:text-sm sm:gap-2 font-medium tracking-wide text-md text-white rounded-lg py-2 hover:brightness-90 transition cursor-pointer flex gap-4 justify-center items-center">
                                                     Ver design
                                                     <Image 
                                                         src="/images/dribble-icon.svg"
@@ -77,7 +77,7 @@ export default function Portfolio () {
                                         }
                                         {
                                             project.linkGithub && (
-                                                <a href={project.linkGithub} target="new_blank" className="w-full bg-(--cp) font-medium tracking-wide text-md text-white rounded-lg py-2 hover:brightness-90 transition cursor-pointer flex gap-4 justify-center items-center">
+                                                <a href={project.linkGithub} target="new_blank" className="w-full bg-(--cp) sm:px-2 sm:text-sm sm:gap-2 font-medium tracking-wide text-md text-white rounded-lg py-2 hover:brightness-90 transition cursor-pointer flex gap-4 justify-center items-center">
                                                     Ver código
                                                     <Image 
                                                         src="/images/github-icon.svg"
